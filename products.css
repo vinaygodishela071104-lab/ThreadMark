@@ -1,0 +1,4254 @@
+.threadmark-products-hero {
+  padding: 82px 6%;
+  background: var(--surface-alt);
+}
+
+.threadmark-products-hero__container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.9fr);
+  align-items: center;
+  gap: 72px;
+  width: min(100%, 1280px);
+  min-height: 540px;
+  margin: 0 auto;
+}
+
+.threadmark-products-hero__content {
+  max-width: 630px;
+}
+
+.threadmark-products-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 7px 15px;
+  border: 1px solid rgba(0, 54, 92, 0.22);
+  border-radius: var(--radius-pill);
+  color: var(--primary);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.threadmark-products-hero__eyebrow::before {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(165, 117, 56, 0.11);
+  content: "";
+}
+
+.threadmark-products-hero__title {
+  max-width: 630px;
+  color: var(--primary);
+  font-size: var(--hero-heading-size);
+  font-weight: var(--hero-heading-weight);
+  line-height: 1.02;
+}
+
+.threadmark-products-hero__title-primary {
+  color: var(--primary);
+}
+
+.threadmark-products-hero__title-secondary {
+  color: var(--secondary);
+}
+
+.threadmark-products-hero__description {
+  max-width: 540px;
+  margin-top: 25px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.threadmark-products-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.threadmark-products-hero__actions .btn-primary,
+.threadmark-products-hero__actions .btn-secondary {
+  gap: 9px;
+}
+
+.threadmark-products-hero__actions svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.threadmark-products-hero__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 42px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.threadmark-products-hero__detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.threadmark-products-hero__detail small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 400;
+}
+
+.threadmark-products-hero__detail-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: rgba(165, 117, 56, 0.12);
+  color: var(--secondary);
+}
+
+.threadmark-products-hero__detail-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.threadmark-products-hero__visual {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.threadmark-products-hero__image-wrapper {
+  position: relative;
+  width: min(100%, 500px);
+  height: 510px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.threadmark-products-hero__image-wrapper::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 54, 92, 0) 45%,
+    rgba(0, 54, 92, 0.34) 100%
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.threadmark-products-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.threadmark-products-hero__image-wrapper:hover
+  .threadmark-products-hero__image {
+  transform: scale(1.03);
+}
+
+.threadmark-products-hero__badge {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 205px;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(10px);
+}
+
+.threadmark-products-hero__badge-icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.threadmark-products-hero__badge-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+}
+
+.threadmark-products-hero__badge-text {
+  color: var(--primary);
+  font-size: 0.77rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.threadmark-products-hero__badge-text small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.67rem;
+  font-weight: 400;
+}
+.threadmark-shop-catalog {
+  position: relative;
+  overflow: hidden;
+  padding: 112px 6%;
+  background: var(--surface-alt);
+  isolation: isolate;
+}
+
+.threadmark-shop-catalog::before {
+  position: absolute;
+  top: -230px;
+  left: 50%;
+  z-index: -1;
+  width: 680px;
+  height: 430px;
+  border: 1px solid rgba(165, 117, 56, 0.14);
+  border-radius: 50%;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.threadmark-shop-catalog::after {
+  position: absolute;
+  right: -160px;
+  bottom: 120px;
+  z-index: -1;
+  width: 330px;
+  height: 330px;
+  border: 1px solid rgba(0, 54, 92, 0.08);
+  border-radius: var(--radius-round);
+  content: "";
+  transform: rotate(24deg);
+}
+
+.threadmark-shop-catalog__container {
+  position: relative;
+  width: min(100%, 1380px);
+  margin: 0 auto;
+}
+
+.threadmark-shop-catalog__heading {
+  max-width: 760px;
+  margin: 0 auto 54px;
+  text-align: center;
+}
+
+.threadmark-shop-catalog__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 7px 15px;
+  border: 1px solid rgba(0, 54, 92, 0.22);
+  border-radius: var(--radius-pill);
+  color: var(--primary);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.threadmark-shop-catalog__eyebrow::before {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(165, 117, 56, 0.11);
+  content: "";
+}
+
+.threadmark-shop-catalog__title {
+  color: var(--primary);
+  font-size: var(--section-heading-size);
+  font-weight: var(--section-heading-weight);
+  line-height: 1.04;
+}
+
+.threadmark-shop-catalog__title-primary {
+  color: var(--primary);
+}
+
+.threadmark-shop-catalog__title-secondary {
+  color: var(--secondary);
+}
+
+.threadmark-shop-catalog__intro {
+  max-width: 590px;
+  margin: 21px auto 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.85;
+}
+
+.threadmark-shop-catalog__category-shell {
+  margin-bottom: 24px;
+  padding: 9px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.56);
+  box-shadow: var(--shadow-soft);
+}
+
+.threadmark-shop-catalog__category-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.threadmark-shop-catalog__category-list::-webkit-scrollbar {
+  display: none;
+}
+
+.threadmark-shop-catalog__category {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 43px;
+  padding: 10px 17px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.threadmark-shop-catalog__category span {
+  display: inline-grid;
+  min-width: 21px;
+  height: 21px;
+  padding: 0 5px;
+  place-items: center;
+  border-radius: var(--radius-pill);
+  background: rgba(0, 54, 92, 0.06);
+  color: var(--muted);
+  font-size: 0.65rem;
+}
+
+.threadmark-shop-catalog__category:hover,
+.threadmark-shop-catalog__category:focus-visible {
+  color: var(--primary);
+}
+
+.threadmark-shop-catalog__category.is-active {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 7px 18px rgba(0, 54, 92, 0.16);
+}
+
+.threadmark-shop-catalog__category.is-active span {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+}
+
+.threadmark-shop-catalog__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 22px;
+  padding: 13px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.threadmark-shop-catalog__search {
+  position: relative;
+  width: min(100%, 470px);
+}
+
+.threadmark-shop-catalog__search-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.threadmark-shop-catalog__search-icon {
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  width: 18px;
+  height: 18px;
+  color: var(--secondary);
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.threadmark-shop-catalog__search-input {
+  width: 100%;
+  min-height: 47px;
+  padding: 10px 46px;
+  border-color: var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface-alt);
+  font-size: 0.8rem;
+}
+
+.threadmark-shop-catalog__clear-search {
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: var(--transition);
+}
+
+.threadmark-shop-catalog__clear-search:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.threadmark-shop-catalog__clear-search svg {
+  width: 14px;
+  height: 14px;
+}
+
+.threadmark-shop-catalog__toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.threadmark-shop-catalog__filter-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 47px;
+  padding: 10px 17px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface-alt);
+  color: var(--primary);
+  font-size: 0.79rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.threadmark-shop-catalog__filter-trigger:hover,
+.threadmark-shop-catalog__filter-trigger:focus-visible {
+  border-color: var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.threadmark-shop-catalog__filter-trigger svg {
+  width: 17px;
+  height: 17px;
+}
+
+.threadmark-shop-catalog__filter-count {
+  display: inline-grid;
+  min-width: 21px;
+  height: 21px;
+  padding: 0 5px;
+  place-items: center;
+  border-radius: var(--radius-pill);
+  background: var(--secondary);
+  color: var(--white);
+  font-size: 0.65rem;
+}
+
+.threadmark-shop-catalog__sort {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.threadmark-shop-catalog__sort label {
+  color: var(--muted);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.threadmark-shop-catalog__sort select {
+  min-height: 47px;
+  min-width: 158px;
+  padding: 10px 37px 10px 14px;
+  border-radius: var(--radius-pill);
+  appearance: none;
+  color: var(--primary);
+  font-size: 0.77rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.threadmark-shop-catalog__sort > svg {
+  position: absolute;
+  right: 13px;
+  width: 15px;
+  height: 15px;
+  color: var(--secondary);
+  pointer-events: none;
+}
+
+.threadmark-shop-catalog__active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.threadmark-shop-catalog__active-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px 7px 13px;
+  border-radius: var(--radius-pill);
+  background: rgba(165, 117, 56, 0.1);
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.threadmark-shop-catalog__active-filter button {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.threadmark-shop-catalog__active-filter button:focus-visible {
+  outline: 3px solid rgba(165, 117, 56, 0.25);
+  outline-offset: 2px;
+}
+
+.threadmark-shop-catalog__active-filter svg {
+  width: 12px;
+  height: 12px;
+}
+
+.threadmark-shop-catalog__filter-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: rgba(7, 21, 34, 0.46);
+  backdrop-filter: blur(4px);
+}
+
+.threadmark-shop-catalog__filter-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 21;
+  display: flex;
+  flex-direction: column;
+  width: min(430px, 100%);
+  height: 100vh;
+  padding: 28px;
+  background: var(--surface);
+  box-shadow: var(--shadow-panel);
+  transform: translateX(105%);
+  transition: var(--transition);
+  visibility: hidden;
+}
+
+.threadmark-shop-catalog__filter-panel.is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.threadmark-shop-catalog__filter-panel-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 21px;
+  border-bottom: 1px solid var(--border);
+}
+
+.threadmark-shop-catalog__panel-label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--secondary);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.threadmark-shop-catalog__filter-panel-header h3 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.threadmark-shop-catalog__filter-close {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-round);
+  background: var(--surface-alt);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.threadmark-shop-catalog__filter-close:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.threadmark-shop-catalog__filter-close:focus-visible {
+  outline: 3px solid rgba(165, 117, 56, 0.25);
+  outline-offset: 2px;
+}
+
+.threadmark-shop-catalog__filter-close svg {
+  width: 18px;
+  height: 18px;
+}
+
+.threadmark-shop-catalog__filter-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 25px 2px;
+}
+
+.threadmark-shop-catalog__filter-group {
+  padding: 0 0 24px;
+  border: 0;
+}
+
+.threadmark-shop-catalog__filter-group
+  + .threadmark-shop-catalog__filter-group {
+  padding-top: 23px;
+  border-top: 1px solid var(--border);
+}
+
+.threadmark-shop-catalog__filter-group legend {
+  margin-bottom: 14px;
+  color: var(--primary);
+  font-family: var(--heading-font);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.threadmark-shop-catalog__check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  color: var(--muted);
+  font-size: 0.81rem;
+  cursor: pointer;
+}
+
+.threadmark-shop-catalog__check input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.threadmark-shop-catalog__check-box {
+  display: grid;
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--surface);
+  transition: var(--transition);
+}
+
+.threadmark-shop-catalog__check
+  input:checked
+  + .threadmark-shop-catalog__check-box {
+  border-color: var(--secondary);
+  background: var(--secondary);
+}
+
+.threadmark-shop-catalog__check
+  input:checked
+  + .threadmark-shop-catalog__check-box::after {
+  width: 8px;
+  height: 4px;
+  border-bottom: 2px solid var(--white);
+  border-left: 2px solid var(--white);
+  content: "";
+  transform: rotate(-45deg) translateY(-1px);
+}
+
+.threadmark-shop-catalog__check
+  input:focus-visible
+  + .threadmark-shop-catalog__check-box {
+  outline: 3px solid rgba(165, 117, 56, 0.2);
+  outline-offset: 2px;
+}
+
+.threadmark-shop-catalog__check small {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.69rem;
+}
+
+.threadmark-shop-catalog__filter-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.threadmark-shop-catalog__filter-actions .btn-primary,
+.threadmark-shop-catalog__filter-actions .btn-secondary {
+  min-height: 44px;
+}
+
+.threadmark-shop-catalog__results-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 27px 0 18px;
+}
+
+.threadmark-shop-catalog__result-count {
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.threadmark-shop-catalog__result-status {
+  color: var(--muted);
+  font-size: 0.73rem;
+}
+
+.threadmark-shop-catalog__product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 29px 19px;
+}
+
+.threadmark-product-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.threadmark-product-card[hidden] {
+  display: none;
+}
+
+.threadmark-product-card:hover {
+  border-color: rgba(165, 117, 56, 0.38);
+  box-shadow: var(--shadow-panel);
+  transform: translateY(-5px);
+}
+
+.threadmark-product-card__image-wrapper {
+  position: relative;
+  aspect-ratio: 0.92;
+  overflow: hidden;
+  background: var(--surface-alt);
+}
+
+.threadmark-product-card__image-wrapper::after {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(0, 54, 92, 0.08);
+  content: "";
+  pointer-events: none;
+}
+
+.threadmark-product-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.threadmark-product-card:hover .threadmark-product-card__image {
+  transform: scale(1.055);
+}
+
+.threadmark-product-card__badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-pill);
+  background: rgba(165, 117, 56, 0.94);
+  color: var(--white);
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.threadmark-product-card__wishlist {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: grid;
+  width: 39px;
+  height: 39px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: var(--radius-round);
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--primary);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: var(--transition);
+}
+
+.threadmark-product-card:hover .threadmark-product-card__wishlist,
+.threadmark-product-card__wishlist:focus-visible,
+.threadmark-product-card__wishlist.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.threadmark-product-card__wishlist:hover,
+.threadmark-product-card__wishlist.is-active {
+  border-color: var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.threadmark-product-card__wishlist svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.threadmark-product-card__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 18px 17px 17px;
+}
+
+.threadmark-product-card__category {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--secondary);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.threadmark-product-card__name {
+  display: -webkit-box;
+  overflow: hidden;
+  min-height: 2.35em;
+  color: var(--primary);
+  font-family: var(--heading-font);
+  font-size: 1.42rem;
+  font-weight: 600;
+  line-height: 1.17;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.threadmark-product-card__description {
+  display: -webkit-box;
+  overflow: hidden;
+  min-height: 3.1em;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.55;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.threadmark-product-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 25px;
+  margin-top: 14px;
+}
+
+.threadmark-product-card__tag {
+  padding: 5px 9px;
+  border: 1px solid rgba(165, 117, 56, 0.28);
+  border-radius: var(--radius-pill);
+  color: var(--secondary);
+  font-size: 0.61rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.threadmark-product-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 17px;
+}
+
+.threadmark-product-card__price {
+  color: var(--primary);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.threadmark-product-card__customize {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--secondary);
+  font-size: 0.69rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.threadmark-product-card__customize svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 1.8;
+  transition: var(--transition);
+}
+
+.threadmark-product-card__customize:hover {
+  color: var(--primary);
+}
+
+.threadmark-product-card__customize:hover svg {
+  transform: translate(2px, -2px);
+}
+
+.threadmark-product-card__wishlist:focus-visible,
+.threadmark-product-card__customize:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+.threadmark-shop-catalog__empty {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 70px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  text-align: center;
+}
+
+.threadmark-shop-catalog__empty[hidden] {
+  display: none;
+}
+
+.threadmark-shop-catalog__empty-icon {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 18px;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: rgba(165, 117, 56, 0.12);
+  color: var(--secondary);
+}
+
+.threadmark-shop-catalog__empty-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.threadmark-shop-catalog__empty h3 {
+  color: var(--primary);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.threadmark-shop-catalog__empty p {
+  max-width: 370px;
+  margin: 8px auto 22px;
+  font-size: 0.85rem;
+}
+
+.threadmark-shop-catalog__load-more-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 42px;
+  clear: both;
+}
+
+.threadmark-shop-catalog__load-more {
+  gap: 9px;
+}
+
+.threadmark-shop-catalog__load-more svg {
+  width: 16px;
+  height: 16px;
+}
+.threadmark-product-benefits {
+  position: relative;
+  overflow: hidden;
+  padding: 108px 6%;
+  background: var(--background);
+  isolation: isolate;
+}
+
+.threadmark-product-benefits::before {
+  position: absolute;
+  top: -170px;
+  right: -110px;
+  z-index: -1;
+  width: 380px;
+  height: 380px;
+  border: 1px solid rgba(165, 117, 56, 0.12);
+  border-radius: var(--radius-round);
+  content: "";
+  transform: rotate(25deg);
+}
+
+.threadmark-product-benefits::after {
+  position: absolute;
+  bottom: -230px;
+  left: -160px;
+  z-index: -1;
+  width: 460px;
+  height: 460px;
+  border: 1px solid rgba(0, 54, 92, 0.08);
+  border-radius: var(--radius-round);
+  content: "";
+  transform: rotate(18deg);
+}
+
+.threadmark-product-benefits__container {
+  width: min(100%, 1260px);
+  margin: 0 auto;
+}
+
+.threadmark-product-benefits__heading {
+  max-width: 740px;
+  margin: 0 auto 58px;
+  text-align: center;
+}
+
+.threadmark-product-benefits__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 7px 15px;
+  border: 1px solid rgba(0, 54, 92, 0.22);
+  border-radius: var(--radius-pill);
+  color: var(--primary);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.threadmark-product-benefits__eyebrow::before {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(165, 117, 56, 0.11);
+  content: "";
+}
+
+.threadmark-product-benefits__title {
+  color: var(--primary);
+  font-size: var(--section-heading-size);
+  font-weight: var(--section-heading-weight);
+  line-height: 1.04;
+}
+
+.threadmark-product-benefits__title-primary {
+  color: var(--primary);
+}
+
+.threadmark-product-benefits__title-secondary {
+  color: var(--secondary);
+}
+
+.threadmark-product-benefits__intro {
+  max-width: 580px;
+  margin: 21px auto 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.85;
+}
+
+.threadmark-product-benefits__layout {
+  display: grid;
+  grid-template-columns: minmax(330px, 0.85fr) minmax(0, 1.15fr);
+  align-items: stretch;
+  gap: 26px;
+}
+
+.threadmark-product-benefits__feature {
+  min-height: 540px;
+}
+
+.threadmark-product-benefits__feature-image-wrapper {
+  position: relative;
+  height: 100%;
+  min-height: 540px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--surface-alt);
+  box-shadow: var(--shadow-panel);
+  isolation: isolate;
+}
+
+.threadmark-product-benefits__feature-image-wrapper::before {
+  position: absolute;
+  inset: 14px;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: calc(var(--radius-lg) - 8px);
+  content: "";
+  pointer-events: none;
+}
+
+.threadmark-product-benefits__feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.threadmark-product-benefits__feature-image-wrapper:hover
+  .threadmark-product-benefits__feature-image {
+  transform: scale(1.04);
+}
+
+.threadmark-product-benefits__feature-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 54, 92, 0.08) 20%,
+    rgba(0, 20, 35, 0.72) 100%
+  );
+}
+
+.threadmark-product-benefits__feature-caption {
+  position: absolute;
+  right: 27px;
+  bottom: 27px;
+  left: 27px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.13);
+  color: var(--white);
+  font-size: 0.79rem;
+  font-weight: 600;
+  line-height: 1.3;
+  backdrop-filter: blur(13px);
+}
+
+.threadmark-product-benefits__feature-caption small {
+  display: block;
+  margin-top: 3px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.68rem;
+  font-weight: 400;
+}
+
+.threadmark-product-benefits__caption-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.threadmark-product-benefits__caption-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.threadmark-product-benefits__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.threadmark-product-benefit {
+  position: relative;
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  padding: 26px 23px 23px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.threadmark-product-benefit::after {
+  position: absolute;
+  right: -25px;
+  bottom: -35px;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(165, 117, 56, 0.12);
+  border-radius: var(--radius-round);
+  content: "";
+  transition: var(--transition);
+}
+
+.threadmark-product-benefit:hover {
+  border-color: rgba(165, 117, 56, 0.34);
+  box-shadow: var(--shadow-panel);
+  transform: translateY(-4px);
+}
+
+.threadmark-product-benefit:hover::after {
+  transform: scale(1.18) rotate(20deg);
+}
+
+.threadmark-product-benefit__icon {
+  display: grid;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 22px;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: rgba(165, 117, 56, 0.12);
+  color: var(--secondary);
+}
+
+.threadmark-product-benefit__icon svg {
+  width: 21px;
+  height: 21px;
+  stroke-width: 1.7;
+}
+
+.threadmark-product-benefit__content {
+  position: relative;
+  z-index: 1;
+}
+
+.threadmark-product-benefit__content h3 {
+  max-width: 190px;
+  color: var(--primary);
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.threadmark-product-benefit__content p {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.65;
+}
+
+.threadmark-product-benefit__number {
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+  z-index: 1;
+  color: rgba(0, 54, 92, 0.11);
+  font-family: var(--heading-font);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.threadmark-product-benefits__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  margin-top: 32px;
+  padding-top: 25px;
+  border-top: 1px solid var(--border);
+}
+
+.threadmark-product-benefits__bottom-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.threadmark-product-benefits__bottom-item svg {
+  width: 17px;
+  height: 17px;
+  color: var(--secondary);
+  stroke-width: 1.8;
+}
+
+.threadmark-product-benefits__bottom-line {
+  width: 1px;
+  height: 18px;
+  background: var(--border);
+}
+.threadmark-customization-highlight {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 6%;
+  background: var(--surface-alt);
+  isolation: isolate;
+}
+
+.threadmark-customization-highlight::before {
+  position: absolute;
+  top: -200px;
+  left: -180px;
+  z-index: -1;
+  width: 470px;
+  height: 470px;
+  border: 1px solid rgba(0, 54, 92, 0.09);
+  border-radius: var(--radius-round);
+  content: "";
+  transform: rotate(28deg);
+}
+
+.threadmark-customization-highlight::after {
+  position: absolute;
+  right: -180px;
+  bottom: -220px;
+  z-index: -1;
+  width: 520px;
+  height: 520px;
+  border: 1px solid rgba(165, 117, 56, 0.12);
+  border-radius: var(--radius-round);
+  content: "";
+  transform: rotate(19deg);
+}
+
+.threadmark-customization-highlight__container {
+  display: grid;
+  grid-template-columns: minmax(400px, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 80px;
+  width: min(100%, 1260px);
+  margin: 0 auto;
+}
+
+.threadmark-customization-highlight__visual {
+  min-width: 0;
+}
+
+.threadmark-customization-highlight__image-wrapper {
+  position: relative;
+  min-height: 590px;
+  overflow: hidden;
+  border-radius: 230px 230px 26px 26px;
+  background: var(--surface);
+  box-shadow: var(--shadow-panel);
+  isolation: isolate;
+}
+
+.threadmark-customization-highlight__image-wrapper::before {
+  position: absolute;
+  inset: 14px;
+  z-index: 3;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 215px 215px 17px 17px;
+  content: "";
+  pointer-events: none;
+}
+
+.threadmark-customization-highlight__image {
+  width: 100%;
+  height: 100%;
+  min-height: 590px;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.threadmark-customization-highlight__image-wrapper:hover
+  .threadmark-customization-highlight__image {
+  transform: scale(1.04);
+}
+
+.threadmark-customization-highlight__image-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 54, 92, 0.02) 25%,
+    rgba(0, 54, 92, 0.14) 54%,
+    rgba(0, 20, 35, 0.72) 100%
+  );
+}
+
+.threadmark-customization-highlight__preview {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--white);
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.threadmark-customization-highlight__preview-label {
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.threadmark-customization-highlight__preview-text {
+  color: var(--secondary);
+  font-family: var(--heading-font);
+  font-size: 5.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  line-height: 0.9;
+  text-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+}
+
+.threadmark-customization-highlight__preview-line {
+  width: 45px;
+  height: 1px;
+  margin-top: 17px;
+  background: var(--secondary);
+}
+
+.threadmark-customization-highlight__visual-note {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  left: 28px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.13);
+  color: var(--white);
+  font-size: 0.79rem;
+  font-weight: 600;
+  line-height: 1.3;
+  backdrop-filter: blur(12px);
+}
+
+.threadmark-customization-highlight__visual-note small {
+  display: block;
+  margin-top: 3px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.67rem;
+  font-weight: 400;
+}
+
+.threadmark-customization-highlight__visual-note-icon {
+  display: grid;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.threadmark-customization-highlight__visual-note-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.threadmark-customization-highlight__content {
+  max-width: 590px;
+}
+
+.threadmark-customization-highlight__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 7px 15px;
+  border: 1px solid rgba(0, 54, 92, 0.22);
+  border-radius: var(--radius-pill);
+  color: var(--primary);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.threadmark-customization-highlight__eyebrow::before {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(165, 117, 56, 0.11);
+  content: "";
+}
+
+.threadmark-customization-highlight__title {
+  max-width: 520px;
+  color: var(--primary);
+  font-size: var(--section-heading-size);
+  font-weight: var(--section-heading-weight);
+  line-height: 1.04;
+}
+
+.threadmark-customization-highlight__title-primary {
+  color: var(--primary);
+}
+
+.threadmark-customization-highlight__title-secondary {
+  color: var(--secondary);
+}
+
+.threadmark-customization-highlight__description {
+  max-width: 530px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.85;
+}
+
+.threadmark-customization-highlight__options {
+  display: grid;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.threadmark-customization-highlight__option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 15px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  transition: var(--transition);
+}
+
+.threadmark-customization-highlight__option:hover {
+  border-color: rgba(165, 117, 56, 0.35);
+  box-shadow: var(--shadow-soft);
+  transform: translateX(4px);
+}
+
+.threadmark-customization-highlight__option-icon {
+  display: grid;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: rgba(165, 117, 56, 0.12);
+  color: var(--secondary);
+}
+
+.threadmark-customization-highlight__option-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.threadmark-customization-highlight__option > span:last-child {
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.threadmark-customization-highlight__option small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 400;
+}
+
+.threadmark-customization-highlight__thread-selection {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.threadmark-customization-highlight__thread-label {
+  color: var(--primary);
+  font-size: 0.73rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.threadmark-customization-highlight__thread-colors {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.threadmark-customization-highlight__thread-color {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--surface);
+  border-radius: var(--radius-round);
+  background: var(--thread-color);
+  box-shadow: 0 0 0 1px var(--border);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.threadmark-customization-highlight__thread-color:hover,
+.threadmark-customization-highlight__thread-color.is-active {
+  box-shadow: 0 0 0 2px var(--secondary);
+  transform: scale(1.13);
+}
+
+.threadmark-customization-highlight__thread-color.is-active::after {
+  position: absolute;
+  inset: 5px;
+  border: 1px solid var(--white);
+  border-radius: var(--radius-round);
+  content: "";
+}
+
+.threadmark-customization-highlight__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 32px;
+}
+
+.threadmark-customization-highlight__actions .btn-primary,
+.threadmark-customization-highlight__actions .btn-secondary {
+  gap: 9px;
+}
+
+.threadmark-customization-highlight__actions svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.threadmark-customization-highlight__note {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.threadmark-customization-highlight__note svg {
+  width: 16px;
+  height: 16px;
+  color: var(--secondary);
+  stroke-width: 1.8;
+}
+.threadmark-bulk-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 92px 6%;
+  background: var(--surface-alt);
+  isolation: isolate;
+}
+
+.threadmark-bulk-cta::before {
+  position: absolute;
+  top: -210px;
+  left: 50%;
+  z-index: -1;
+  width: 620px;
+  height: 420px;
+  border: 1px solid rgba(165, 117, 56, 0.14);
+  border-radius: 50%;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.threadmark-bulk-cta::after {
+  position: absolute;
+  right: -145px;
+  bottom: -180px;
+  z-index: -1;
+  width: 360px;
+  height: 360px;
+  border: 1px solid rgba(0, 54, 92, 0.09);
+  border-radius: var(--radius-round);
+  content: "";
+  transform: rotate(22deg);
+}
+
+.threadmark-bulk-cta__card {
+  position: relative;
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 42px 82px 38px;
+  overflow: hidden;
+  border: 1px solid rgba(165, 117, 56, 0.3);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.98),
+    rgba(250, 248, 245, 0.92)
+  );
+  box-shadow: var(--shadow-panel);
+  text-align: center;
+  isolation: isolate;
+}
+
+.threadmark-bulk-cta__card::before {
+  position: absolute;
+  top: -110px;
+  right: -95px;
+  z-index: -1;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(165, 117, 56, 0.18);
+  border-radius: var(--radius-round);
+  content: "";
+  transform: rotate(25deg);
+}
+
+.threadmark-bulk-cta__card::after {
+  position: absolute;
+  bottom: -130px;
+  left: -100px;
+  z-index: -1;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(0, 54, 92, 0.1);
+  border-radius: var(--radius-round);
+  content: "";
+  transform: rotate(25deg);
+}
+
+.threadmark-bulk-cta__icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 14px;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 12px 25px rgba(0, 54, 92, 0.18);
+}
+
+.threadmark-bulk-cta__icon svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.7;
+}
+
+.threadmark-bulk-cta__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 11px;
+  padding: 7px 15px;
+  border: 1px solid rgba(0, 54, 92, 0.22);
+  border-radius: var(--radius-pill);
+  color: var(--primary);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.threadmark-bulk-cta__eyebrow::before {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(165, 117, 56, 0.11);
+  content: "";
+}
+
+.threadmark-bulk-cta__title {
+  color: var(--primary);
+  font-size: var(--section-heading-size);
+  font-weight: var(--section-heading-weight);
+  line-height: 1.04;
+}
+
+.threadmark-bulk-cta__title-primary {
+  color: var(--primary);
+}
+
+.threadmark-bulk-cta__title-secondary {
+  color: var(--secondary);
+}
+
+.threadmark-bulk-cta__description {
+  max-width: 700px;
+  margin: 14px auto 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+.threadmark-bulk-cta__details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 28px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.threadmark-bulk-cta__detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.threadmark-bulk-cta__detail svg {
+  width: 16px;
+  height: 16px;
+  color: var(--secondary);
+  stroke-width: 1.8;
+}
+
+.threadmark-bulk-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 22px;
+}
+
+.threadmark-bulk-cta__actions .btn-primary,
+.threadmark-bulk-cta__actions .btn-secondary {
+  gap: 9px;
+}
+
+.threadmark-bulk-cta__actions svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.threadmark-bulk-cta__note {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.69rem;
+  line-height: 1.5;
+}
+
+.threadmark-bulk-cta__note svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--secondary);
+  stroke-width: 1.8;
+}
+
+.threadmark-bulk-cta__actions .btn-primary:focus-visible,
+.threadmark-bulk-cta__actions .btn-secondary:focus-visible {
+  outline: 3px solid rgba(165, 117, 56, 0.28);
+  outline-offset: 3px;
+}
+body.dark-mode .threadmark-products-hero {
+  background: var(--surface-alt);
+}
+
+body.dark-mode .threadmark-products-hero__eyebrow {
+  color: var(--text);
+  border-color: rgba(165, 117, 56, 0.38);
+  background: rgba(165, 117, 56, 0.06);
+}
+
+body.dark-mode .threadmark-products-hero__eyebrow::before {
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(165, 117, 56, 0.14);
+}
+
+body.dark-mode .threadmark-products-hero__title,
+body.dark-mode .threadmark-products-hero__title-primary {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-products-hero__title-secondary {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-products-hero__description {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-products-hero__details {
+  border-color: var(--border);
+}
+
+body.dark-mode .threadmark-products-hero__detail {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-products-hero__detail small {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-products-hero__detail-icon {
+  background: rgba(165, 117, 56, 0.14);
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-products-hero__image-wrapper {
+  background: var(--surface);
+  box-shadow: var(--shadow-panel);
+}
+
+body.dark-mode .threadmark-products-hero__image-wrapper::after {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 21, 34, 0.02) 35%,
+    rgba(7, 21, 34, 0.68) 100%
+  );
+}
+
+body.dark-mode .threadmark-products-hero__badge {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(10, 28, 43, 0.9);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(12px);
+}
+
+body.dark-mode .threadmark-products-hero__badge-icon {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+body.dark-mode .threadmark-products-hero__badge-text {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-products-hero__badge-text small {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-shop-catalog {
+  background: var(--surface-alt);
+}
+
+body.dark-mode .threadmark-shop-catalog::before {
+  border-color: rgba(165, 117, 56, 0.14);
+}
+
+body.dark-mode .threadmark-shop-catalog::after {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .threadmark-shop-catalog__eyebrow {
+  color: var(--text);
+  border-color: rgba(165, 117, 56, 0.38);
+  background: rgba(165, 117, 56, 0.06);
+}
+
+body.dark-mode .threadmark-shop-catalog__eyebrow::before {
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(165, 117, 56, 0.14);
+}
+
+body.dark-mode .threadmark-shop-catalog__title,
+body.dark-mode .threadmark-shop-catalog__title-primary {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__title-secondary {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-shop-catalog__intro {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-shop-catalog__category-shell {
+  border-color: var(--border);
+  background: rgba(10, 28, 43, 0.72);
+  box-shadow: var(--shadow-soft);
+}
+
+body.dark-mode .threadmark-shop-catalog__category {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-shop-catalog__category span {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-shop-catalog__category:hover,
+body.dark-mode .threadmark-shop-catalog__category:focus-visible {
+  color: var(--secondary);
+  background: rgba(165, 117, 56, 0.08);
+}
+
+body.dark-mode .threadmark-shop-catalog__category.is-active {
+  background: var(--secondary);
+  color: var(--white);
+  border-color: var(--secondary);
+  box-shadow: 0 8px 20px rgba(165, 117, 56, 0.2);
+}
+
+body.dark-mode .threadmark-shop-catalog__category.is-active span {
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--white);
+}
+
+body.dark-mode .threadmark-shop-catalog__toolbar {
+  border-color: var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+body.dark-mode .threadmark-shop-catalog__search-input {
+  border-color: var(--border);
+  background: var(--surface-alt);
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__search-input::placeholder {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-shop-catalog__search-input:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(165, 117, 56, 0.12);
+}
+
+body.dark-mode .threadmark-shop-catalog__search-icon {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-shop-catalog__clear-search {
+  background: var(--surface);
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-shop-catalog__clear-search:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-trigger {
+  border-color: var(--border);
+  background: var(--surface-alt);
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-trigger:hover,
+body.dark-mode .threadmark-shop-catalog__filter-trigger:focus-visible {
+  border-color: var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-count {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+body.dark-mode .threadmark-shop-catalog__sort label {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-shop-catalog__sort select {
+  border-color: var(--border);
+  background: var(--surface-alt);
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__sort > svg {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-shop-catalog__active-filter {
+  border: 1px solid rgba(165, 117, 56, 0.18);
+  background: rgba(165, 117, 56, 0.1);
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__active-filter button {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-backdrop {
+  background: rgba(0, 0, 0, 0.68);
+  backdrop-filter: blur(5px);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-panel {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: -20px 0 45px rgba(0, 0, 0, 0.42);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-panel-header {
+  border-color: var(--border);
+}
+
+body.dark-mode .threadmark-shop-catalog__panel-label {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-panel-header h3 {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-close {
+  border-color: var(--border);
+  background: var(--surface-alt);
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-close:hover {
+  border-color: var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+body.dark-mode
+  .threadmark-shop-catalog__filter-group
+  + .threadmark-shop-catalog__filter-group {
+  border-color: var(--border);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-group legend {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__check {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-shop-catalog__check:hover {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__check-box {
+  border-color: var(--border);
+  background: var(--surface-alt);
+}
+
+body.dark-mode
+  .threadmark-shop-catalog__check
+  input:checked
+  + .threadmark-shop-catalog__check-box {
+  border-color: var(--secondary);
+  background: var(--secondary);
+}
+
+body.dark-mode .threadmark-shop-catalog__check small {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-shop-catalog__filter-actions {
+  border-color: var(--border);
+}
+
+body.dark-mode .threadmark-shop-catalog__result-count {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__result-status {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-product-card {
+  border-color: var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+body.dark-mode .threadmark-product-card:hover {
+  border-color: rgba(165, 117, 56, 0.42);
+  background: #0c2030;
+  box-shadow: var(--shadow-panel);
+}
+
+body.dark-mode .threadmark-product-card__image-wrapper {
+  background: var(--surface-alt);
+}
+
+body.dark-mode .threadmark-product-card__image-wrapper::after {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+body.dark-mode .threadmark-product-card__badge {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(165, 117, 56, 0.95);
+  color: var(--white);
+}
+
+body.dark-mode .threadmark-product-card__wishlist {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(10, 28, 43, 0.9);
+  color: var(--text);
+  backdrop-filter: blur(8px);
+}
+
+body.dark-mode .threadmark-product-card__wishlist:hover,
+body.dark-mode .threadmark-product-card__wishlist.is-active {
+  border-color: var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+body.dark-mode .threadmark-product-card__category {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-product-card__name {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-product-card__description {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-product-card__tag {
+  border-color: rgba(165, 117, 56, 0.3);
+  background: rgba(165, 117, 56, 0.06);
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-product-card__price {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-product-card__customize {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-product-card__customize:hover {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__empty {
+  border-color: var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+body.dark-mode .threadmark-shop-catalog__empty-icon {
+  background: rgba(165, 117, 56, 0.13);
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-shop-catalog__empty h3 {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-shop-catalog__empty p {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-product-benefits {
+  background: var(--background);
+}
+
+body.dark-mode .threadmark-product-benefits::before {
+  border-color: rgba(165, 117, 56, 0.13);
+}
+
+body.dark-mode .threadmark-product-benefits::after {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .threadmark-product-benefits__eyebrow {
+  color: var(--text);
+  border-color: rgba(165, 117, 56, 0.38);
+  background: rgba(165, 117, 56, 0.06);
+}
+
+body.dark-mode .threadmark-product-benefits__eyebrow::before {
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(165, 117, 56, 0.14);
+}
+
+body.dark-mode .threadmark-product-benefits__title,
+body.dark-mode .threadmark-product-benefits__title-primary {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-product-benefits__title-secondary {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-product-benefits__intro {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-product-benefits__feature-image-wrapper {
+  background: var(--surface-alt);
+  box-shadow: var(--shadow-panel);
+}
+
+body.dark-mode .threadmark-product-benefits__feature-image-wrapper::before {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+body.dark-mode .threadmark-product-benefits__feature-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 21, 34, 0.06) 15%,
+    rgba(7, 21, 34, 0.86) 100%
+  );
+}
+
+body.dark-mode .threadmark-product-benefits__feature-caption {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(7, 21, 34, 0.54);
+  color: var(--white);
+  backdrop-filter: blur(14px);
+}
+
+body.dark-mode .threadmark-product-benefits__feature-caption small {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body.dark-mode .threadmark-product-benefit {
+  border-color: var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+body.dark-mode .threadmark-product-benefit::after {
+  border-color: rgba(165, 117, 56, 0.13);
+}
+
+body.dark-mode .threadmark-product-benefit:hover {
+  border-color: rgba(165, 117, 56, 0.4);
+  background: #0c2030;
+  box-shadow: var(--shadow-panel);
+}
+
+body.dark-mode .threadmark-product-benefit__icon {
+  background: rgba(165, 117, 56, 0.13);
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-product-benefit__content h3 {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-product-benefit__content p {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-product-benefit__number {
+  color: rgba(255, 255, 255, 0.07);
+}
+
+body.dark-mode .threadmark-product-benefits__bottom {
+  border-color: var(--border);
+}
+
+body.dark-mode .threadmark-product-benefits__bottom-item {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-product-benefits__bottom-item svg {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-product-benefits__bottom-line {
+  background: var(--border);
+}
+
+body.dark-mode .threadmark-customization-highlight {
+  background: var(--surface-alt);
+}
+
+body.dark-mode .threadmark-customization-highlight::before {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .threadmark-customization-highlight::after {
+  border-color: rgba(165, 117, 56, 0.13);
+}
+
+body.dark-mode .threadmark-customization-highlight__image-wrapper {
+  background: var(--surface);
+  box-shadow: var(--shadow-panel);
+}
+
+body.dark-mode .threadmark-customization-highlight__image-wrapper::before {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+body.dark-mode .threadmark-customization-highlight__image-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 21, 34, 0.03) 20%,
+    rgba(7, 21, 34, 0.2) 50%,
+    rgba(7, 21, 34, 0.88) 100%
+  );
+}
+
+body.dark-mode .threadmark-customization-highlight__preview-label {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+body.dark-mode .threadmark-customization-highlight__preview-text {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-customization-highlight__visual-note {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(7, 21, 34, 0.56);
+  color: var(--white);
+  backdrop-filter: blur(14px);
+}
+
+body.dark-mode .threadmark-customization-highlight__visual-note small {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body.dark-mode .threadmark-customization-highlight__eyebrow {
+  color: var(--text);
+  border-color: rgba(165, 117, 56, 0.38);
+  background: rgba(165, 117, 56, 0.06);
+}
+
+body.dark-mode .threadmark-customization-highlight__eyebrow::before {
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(165, 117, 56, 0.14);
+}
+
+body.dark-mode .threadmark-customization-highlight__title,
+body.dark-mode .threadmark-customization-highlight__title-primary {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-customization-highlight__title-secondary {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-customization-highlight__description {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-customization-highlight__option {
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+body.dark-mode .threadmark-customization-highlight__option:hover {
+  border-color: rgba(165, 117, 56, 0.4);
+  background: #0c2030;
+  box-shadow: var(--shadow-soft);
+}
+
+body.dark-mode .threadmark-customization-highlight__option-icon {
+  background: rgba(165, 117, 56, 0.13);
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-customization-highlight__option > span:last-child {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-customization-highlight__option small {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-customization-highlight__thread-label {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-customization-highlight__thread-color {
+  border-color: var(--surface);
+  box-shadow: 0 0 0 1px var(--border);
+}
+
+body.dark-mode .threadmark-customization-highlight__thread-color:hover,
+body.dark-mode .threadmark-customization-highlight__thread-color.is-active {
+  box-shadow: 0 0 0 2px var(--secondary);
+}
+
+body.dark-mode .threadmark-customization-highlight__note {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-customization-highlight__note svg {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-bulk-cta {
+  background: var(--surface-alt);
+}
+
+body.dark-mode .threadmark-bulk-cta::before {
+  border-color: rgba(165, 117, 56, 0.14);
+}
+
+body.dark-mode .threadmark-bulk-cta::after {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .threadmark-bulk-cta__card {
+  border-color: rgba(165, 117, 56, 0.28);
+  background: linear-gradient(
+    135deg,
+    rgba(10, 28, 43, 0.98),
+    rgba(16, 37, 54, 0.94)
+  );
+  box-shadow: var(--shadow-panel);
+}
+
+body.dark-mode .threadmark-bulk-cta__card::before {
+  border-color: rgba(165, 117, 56, 0.16);
+}
+
+body.dark-mode .threadmark-bulk-cta__card::after {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .threadmark-bulk-cta__icon {
+  background: var(--secondary);
+  color: var(--white);
+  box-shadow: 0 12px 25px rgba(165, 117, 56, 0.18);
+}
+
+body.dark-mode .threadmark-bulk-cta__eyebrow {
+  color: var(--text);
+  border-color: rgba(165, 117, 56, 0.38);
+  background: rgba(165, 117, 56, 0.06);
+}
+
+body.dark-mode .threadmark-bulk-cta__eyebrow::before {
+  background: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(165, 117, 56, 0.14);
+}
+
+body.dark-mode .threadmark-bulk-cta__title,
+body.dark-mode .threadmark-bulk-cta__title-primary {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-bulk-cta__title-secondary {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-bulk-cta__description {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-bulk-cta__details {
+  border-color: var(--border);
+}
+
+body.dark-mode .threadmark-bulk-cta__detail {
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-bulk-cta__detail svg {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-bulk-cta__note {
+  color: var(--muted);
+}
+
+body.dark-mode .threadmark-bulk-cta__note svg {
+  color: var(--secondary);
+}
+
+body.dark-mode .threadmark-products-hero .btn-primary,
+body.dark-mode .threadmark-shop-catalog .btn-primary,
+body.dark-mode .threadmark-customization-highlight .btn-primary,
+body.dark-mode .threadmark-bulk-cta .btn-primary {
+  border-color: var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+body.dark-mode .threadmark-products-hero .btn-primary:hover,
+body.dark-mode .threadmark-shop-catalog .btn-primary:hover,
+body.dark-mode .threadmark-customization-highlight .btn-primary:hover,
+body.dark-mode .threadmark-bulk-cta .btn-primary:hover {
+  border-color: var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
+  box-shadow: var(--shadow-secondary);
+  filter: brightness(0.92);
+}
+
+body.dark-mode .threadmark-products-hero .btn-secondary,
+body.dark-mode .threadmark-shop-catalog .btn-secondary,
+body.dark-mode .threadmark-customization-highlight .btn-secondary,
+body.dark-mode .threadmark-bulk-cta .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: transparent;
+  color: var(--text);
+}
+
+body.dark-mode .threadmark-products-hero .btn-secondary:hover,
+body.dark-mode .threadmark-shop-catalog .btn-secondary:hover,
+body.dark-mode .threadmark-customization-highlight .btn-secondary:hover,
+body.dark-mode .threadmark-bulk-cta .btn-secondary:hover {
+  border-color: var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
+  box-shadow: var(--shadow-secondary);
+}
+
+body.dark-mode .threadmark-products-hero a:focus-visible,
+body.dark-mode .threadmark-shop-catalog button:focus-visible,
+body.dark-mode .threadmark-shop-catalog a:focus-visible,
+body.dark-mode .threadmark-customization-highlight a:focus-visible,
+body.dark-mode .threadmark-customization-highlight button:focus-visible,
+body.dark-mode .threadmark-bulk-cta a:focus-visible {
+  outline-color: var(--secondary);
+}
+
+body.dark-mode .threadmark-products-hero,
+body.dark-mode .threadmark-shop-catalog,
+body.dark-mode .threadmark-product-benefits,
+body.dark-mode .threadmark-customization-highlight,
+body.dark-mode .threadmark-bulk-cta,
+body.dark-mode .threadmark-product-card,
+body.dark-mode .threadmark-product-benefit,
+body.dark-mode .threadmark-shop-catalog__toolbar,
+body.dark-mode .threadmark-shop-catalog__category-shell,
+body.dark-mode .threadmark-shop-catalog__filter-panel,
+body.dark-mode .threadmark-customization-highlight__option,
+body.dark-mode .threadmark-bulk-cta__card {
+  transition: var(--theme-transition);
+}
+@media screen and (max-width: 480px) {
+  .threadmark-products-hero {
+    padding: 60px 20px 65px;
+  }
+
+  .threadmark-products-hero__container {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    min-height: auto;
+  }
+
+  .threadmark-products-hero__content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .threadmark-products-hero__eyebrow {
+    justify-content: center;
+    margin-bottom: 14px;
+    padding: 7px 13px;
+    font-size: 0.62rem;
+  }
+
+  .threadmark-products-hero__title {
+    max-width: 100%;
+    font-size: clamp(2.5rem, 11vw, 3.5rem);
+    line-height: 0.98;
+  }
+
+  .threadmark-products-hero__description {
+    max-width: 100%;
+    margin: 20px auto 0;
+    font-size: 0.88rem;
+    line-height: 1.75;
+  }
+
+  .threadmark-products-hero__actions {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 26px;
+  }
+
+  .threadmark-products-hero__actions .btn-primary,
+  .threadmark-products-hero__actions .btn-secondary {
+    min-height: 44px;
+    padding: 11px 16px;
+    font-size: 0.72rem;
+  }
+
+  .threadmark-products-hero__details {
+    justify-content: center;
+    gap: 18px;
+    margin-top: 32px;
+    padding-top: 22px;
+  }
+
+  .threadmark-products-hero__detail {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 130px;
+    max-width: 160px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .threadmark-products-hero__detail-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .threadmark-products-hero__visual {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .threadmark-products-hero__image-wrapper {
+    width: 100%;
+    max-width: 400px;
+    height: 430px;
+  }
+
+  .threadmark-products-hero__badge {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    max-width: none;
+    padding: 11px 13px;
+  }
+
+  .threadmark-shop-catalog {
+    padding: 75px 20px;
+  }
+
+  .threadmark-shop-catalog::before {
+    top: -170px;
+    width: 390px;
+    height: 300px;
+  }
+
+  .threadmark-shop-catalog::after {
+    right: -190px;
+    bottom: 80px;
+    width: 280px;
+    height: 280px;
+  }
+
+  .threadmark-shop-catalog__heading {
+    margin-bottom: 36px;
+  }
+
+  .threadmark-shop-catalog__eyebrow {
+    padding: 7px 13px;
+    font-size: 0.62rem;
+  }
+
+  .threadmark-shop-catalog__title {
+    font-size: clamp(2.25rem, 10vw, 3rem);
+    line-height: 1;
+  }
+
+  .threadmark-shop-catalog__intro {
+    margin-top: 17px;
+    font-size: 0.84rem;
+    line-height: 1.7;
+  }
+
+  .threadmark-shop-catalog__category-shell {
+    padding: 7px;
+    border-radius: var(--radius-md);
+  }
+
+  .threadmark-shop-catalog__category-list {
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 1px;
+  }
+
+  .threadmark-shop-catalog__category {
+    min-height: 40px;
+    padding: 9px 13px;
+    font-size: 0.71rem;
+  }
+
+  .threadmark-shop-catalog__toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 11px;
+    padding: 11px;
+  }
+
+  .threadmark-shop-catalog__search {
+    width: 100%;
+  }
+
+  .threadmark-shop-catalog__search-input {
+    min-height: 45px;
+  }
+
+  .threadmark-shop-catalog__toolbar-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .threadmark-shop-catalog__filter-trigger {
+    width: 100%;
+    min-height: 44px;
+    padding: 9px 12px;
+  }
+
+  .threadmark-shop-catalog__sort {
+    width: 100%;
+  }
+
+  .threadmark-shop-catalog__sort label {
+    display: none;
+  }
+
+  .threadmark-shop-catalog__sort select {
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+  }
+
+  .threadmark-shop-catalog__results-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    margin: 22px 0 16px;
+  }
+
+  .threadmark-shop-catalog__product-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .threadmark-product-card {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+  }
+
+  .threadmark-product-card:hover {
+    transform: none;
+  }
+
+  .threadmark-product-card__image-wrapper {
+    aspect-ratio: 1 / 1.05;
+  }
+
+  .threadmark-product-card__badge {
+    top: 13px;
+    left: 13px;
+    padding: 6px 9px;
+    font-size: 0.58rem;
+  }
+
+  .threadmark-product-card__wishlist {
+    top: 12px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
+    opacity: 1;
+    transform: none;
+  }
+
+  .threadmark-product-card__wishlist svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .threadmark-product-card__content {
+    padding: 18px 17px 17px;
+  }
+
+  .threadmark-product-card__category {
+    margin-bottom: 6px;
+    font-size: 0.61rem;
+    letter-spacing: 0.1em;
+  }
+
+  .threadmark-product-card__name {
+    min-height: auto;
+    font-size: 1.4rem;
+    line-height: 1.16;
+  }
+
+  .threadmark-product-card__description {
+    min-height: auto;
+    margin-top: 8px;
+    font-size: 0.73rem;
+    line-height: 1.6;
+  }
+
+  .threadmark-product-card__tags {
+    gap: 6px;
+    min-height: auto;
+    margin-top: 14px;
+  }
+
+  .threadmark-product-card__tag {
+    padding: 5px 9px;
+    font-size: 0.59rem;
+  }
+
+  .threadmark-product-card__bottom {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 17px;
+  }
+
+  .threadmark-product-card__price {
+    font-size: 0.86rem;
+  }
+
+  .threadmark-product-card__customize {
+    font-size: 0.68rem;
+    white-space: nowrap;
+  }
+
+  .threadmark-shop-catalog__filter-panel {
+    width: 100%;
+    padding: 22px 18px;
+  }
+
+  .threadmark-shop-catalog__filter-panel-header h3 {
+    font-size: 1.35rem;
+  }
+
+  .threadmark-shop-catalog__filter-actions {
+    gap: 8px;
+  }
+
+  .threadmark-shop-catalog__empty {
+    padding: 50px 18px;
+  }
+
+  .threadmark-shop-catalog__load-more-wrap {
+    margin-top: 32px;
+  }
+
+  .threadmark-product-benefits {
+    padding: 75px 20px;
+  }
+
+  .threadmark-product-benefits__heading {
+    margin-bottom: 38px;
+  }
+
+  .threadmark-product-benefits__eyebrow {
+    padding: 7px 13px;
+    font-size: 0.62rem;
+  }
+
+  .threadmark-product-benefits__title {
+    font-size: clamp(2.25rem, 10vw, 3rem);
+    line-height: 1;
+  }
+
+  .threadmark-product-benefits__intro {
+    margin-top: 17px;
+    font-size: 0.84rem;
+    line-height: 1.7;
+  }
+
+  .threadmark-product-benefits__layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .threadmark-product-benefits__feature {
+    min-height: 420px;
+  }
+
+  .threadmark-product-benefits__feature-image-wrapper {
+    min-height: 420px;
+  }
+
+  .threadmark-product-benefits__feature-caption {
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 12px 13px;
+    font-size: 0.72rem;
+  }
+
+  .threadmark-product-benefits__cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .threadmark-product-benefit {
+    min-height: auto;
+    padding: 22px 19px 25px;
+  }
+
+  .threadmark-product-benefit__icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 17px;
+  }
+
+  .threadmark-product-benefit__content h3 {
+    max-width: 100%;
+    font-size: 1.35rem;
+  }
+
+  .threadmark-product-benefit__content p {
+    padding-right: 25px;
+  }
+
+  .threadmark-product-benefit__number {
+    right: 15px;
+    bottom: 14px;
+    font-size: 1.8rem;
+  }
+
+  .threadmark-product-benefits__bottom {
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    margin-top: 25px;
+  }
+
+  .threadmark-product-benefits__bottom-line {
+    display: none;
+  }
+
+  .threadmark-product-benefits__bottom-item {
+    justify-content: center;
+    font-size: 0.66rem;
+  }
+
+  .threadmark-customization-highlight {
+    padding: 75px 20px;
+  }
+
+  .threadmark-customization-highlight__container {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .threadmark-customization-highlight__visual {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .threadmark-customization-highlight__image-wrapper {
+    min-height: 470px;
+    border-radius: 170px 170px 22px 22px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper::before {
+    inset: 10px;
+    border-radius: 160px 160px 15px 15px;
+  }
+
+  .threadmark-customization-highlight__image {
+    min-height: 470px;
+  }
+
+  .threadmark-customization-highlight__preview-text {
+    font-size: 4.2rem;
+  }
+
+  .threadmark-customization-highlight__visual-note {
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 12px 13px;
+  }
+
+  .threadmark-customization-highlight__content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .threadmark-customization-highlight__eyebrow {
+    justify-content: center;
+    padding: 7px 13px;
+    font-size: 0.62rem;
+  }
+
+  .threadmark-customization-highlight__title {
+    max-width: 100%;
+    font-size: clamp(2.25rem, 10vw, 3rem);
+    line-height: 1;
+  }
+
+  .threadmark-customization-highlight__description {
+    max-width: 100%;
+    margin: 18px auto 0;
+    font-size: 0.84rem;
+    line-height: 1.7;
+  }
+
+  .threadmark-customization-highlight__options {
+    margin-top: 25px;
+    text-align: left;
+  }
+
+  .threadmark-customization-highlight__option {
+    padding: 12px 13px;
+  }
+
+  .threadmark-customization-highlight__option:hover {
+    transform: none;
+  }
+
+  .threadmark-customization-highlight__thread-selection {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .threadmark-customization-highlight__thread-colors {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .threadmark-customization-highlight__actions {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 27px;
+  }
+
+  .threadmark-customization-highlight__actions .btn-primary,
+  .threadmark-customization-highlight__actions .btn-secondary {
+    min-height: 44px;
+    padding: 11px 16px;
+    font-size: 0.72rem;
+  }
+
+  .threadmark-customization-highlight__note {
+    justify-content: center;
+  }
+
+  .threadmark-bulk-cta {
+    padding: 70px 20px;
+  }
+
+  .threadmark-bulk-cta__card {
+    padding: 35px 20px 30px;
+    text-align: center;
+  }
+
+  .threadmark-bulk-cta__icon {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .threadmark-bulk-cta__eyebrow {
+    justify-content: center;
+    padding: 7px 13px;
+    font-size: 0.62rem;
+  }
+
+  .threadmark-bulk-cta__title {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+    line-height: 1;
+  }
+
+  .threadmark-bulk-cta__description {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 0.84rem;
+    line-height: 1.7;
+  }
+
+  .threadmark-bulk-cta__details {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 13px 18px;
+  }
+
+  .threadmark-bulk-cta__detail {
+    font-size: 0.7rem;
+  }
+
+  .threadmark-bulk-cta__actions {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .threadmark-bulk-cta__actions .btn-primary,
+  .threadmark-bulk-cta__actions .btn-secondary {
+    min-height: 44px;
+    padding: 11px 16px;
+    font-size: 0.72rem;
+  }
+
+  .threadmark-bulk-cta__note {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  .threadmark-products-hero {
+    padding: 72px 5%;
+  }
+
+  .threadmark-products-hero__container {
+    grid-template-columns: 1fr 0.82fr;
+    gap: 38px;
+    min-height: 470px;
+  }
+
+  .threadmark-products-hero__title {
+    font-size: clamp(3rem, 6vw, 4rem);
+  }
+
+  .threadmark-products-hero__description {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+
+  .threadmark-products-hero__actions {
+    gap: 10px;
+    margin-top: 26px;
+  }
+
+  .threadmark-products-hero__details {
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .threadmark-products-hero__detail {
+    font-size: 0.7rem;
+  }
+
+  .threadmark-products-hero__image-wrapper {
+    height: 450px;
+  }
+
+  .threadmark-products-hero__badge {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    max-width: none;
+  }
+
+  .threadmark-shop-catalog {
+    padding: 88px 5%;
+  }
+
+  .threadmark-shop-catalog__heading {
+    margin-bottom: 44px;
+  }
+
+  .threadmark-shop-catalog__category-list {
+    justify-content: flex-start;
+  }
+
+  .threadmark-shop-catalog__toolbar {
+    gap: 12px;
+  }
+
+  .threadmark-shop-catalog__search {
+    flex: 1;
+  }
+
+  .threadmark-shop-catalog__toolbar-actions {
+    gap: 8px;
+  }
+
+  .threadmark-shop-catalog__sort label {
+    display: none;
+  }
+
+  .threadmark-shop-catalog__sort select {
+    min-width: 140px;
+  }
+
+  .threadmark-shop-catalog__product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 17px;
+  }
+
+  .threadmark-product-card__wishlist {
+    opacity: 1;
+    transform: none;
+  }
+
+  .threadmark-product-benefits {
+    padding: 88px 5%;
+  }
+
+  .threadmark-product-benefits__heading {
+    margin-bottom: 46px;
+  }
+
+  .threadmark-product-benefits__layout {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 18px;
+  }
+
+  .threadmark-product-benefits__feature,
+  .threadmark-product-benefits__feature-image-wrapper {
+    min-height: 500px;
+  }
+
+  .threadmark-product-benefits__cards {
+    gap: 12px;
+  }
+
+  .threadmark-product-benefit {
+    min-height: 244px;
+    padding: 21px 18px;
+  }
+
+  .threadmark-product-benefit__icon {
+    margin-bottom: 17px;
+  }
+
+  .threadmark-product-benefit__content h3 {
+    font-size: 1.25rem;
+  }
+
+  .threadmark-product-benefit__content p {
+    font-size: 0.7rem;
+  }
+
+  .threadmark-product-benefits__bottom {
+    gap: 16px;
+  }
+
+  .threadmark-customization-highlight {
+    padding: 88px 5%;
+  }
+
+  .threadmark-customization-highlight__container {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 42px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper,
+  .threadmark-customization-highlight__image {
+    min-height: 520px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper {
+    border-radius: 180px 180px 24px 24px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper::before {
+    border-radius: 168px 168px 17px 17px;
+  }
+
+  .threadmark-customization-highlight__preview-text {
+    font-size: 4.5rem;
+  }
+
+  .threadmark-customization-highlight__visual-note {
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+  }
+
+  .threadmark-customization-highlight__title {
+    font-size: clamp(2.5rem, 5vw, 3.3rem);
+  }
+
+  .threadmark-customization-highlight__description {
+    margin-top: 18px;
+    font-size: 0.84rem;
+  }
+
+  .threadmark-customization-highlight__options {
+    margin-top: 24px;
+  }
+
+  .threadmark-customization-highlight__option {
+    padding: 11px 12px;
+  }
+
+  .threadmark-customization-highlight__thread-selection {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 23px;
+  }
+
+  .threadmark-bulk-cta {
+    padding: 78px 5%;
+  }
+
+  .threadmark-bulk-cta__card {
+    padding: 40px 48px 35px;
+  }
+
+  .threadmark-bulk-cta__title {
+    font-size: clamp(2.7rem, 5.5vw, 3.7rem);
+  }
+
+  .threadmark-bulk-cta__details {
+    flex-wrap: wrap;
+    gap: 15px 22px;
+  }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .threadmark-products-hero {
+    padding: 76px 5%;
+  }
+
+  .threadmark-products-hero__container {
+    grid-template-columns: minmax(0, 1fr) minmax(350px, 0.85fr);
+    gap: 46px;
+    min-height: 500px;
+  }
+
+  .threadmark-products-hero__title {
+    font-size: clamp(3.3rem, 5.5vw, 4.4rem);
+  }
+
+  .threadmark-products-hero__description {
+    max-width: 500px;
+  }
+
+  .threadmark-products-hero__details {
+    gap: 18px;
+  }
+
+  .threadmark-products-hero__image-wrapper {
+    height: 470px;
+  }
+
+  .threadmark-shop-catalog {
+    padding: 94px 5%;
+  }
+
+  .threadmark-shop-catalog__category-list {
+    justify-content: flex-start;
+  }
+
+  .threadmark-shop-catalog__product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 17px;
+  }
+
+  .threadmark-product-card__wishlist {
+    opacity: 1;
+    transform: none;
+  }
+
+  .threadmark-product-card__name {
+    font-size: 1.3rem;
+  }
+
+  .threadmark-product-benefits {
+    padding: 94px 5%;
+  }
+
+  .threadmark-product-benefits__layout {
+    grid-template-columns: minmax(310px, 0.8fr) minmax(0, 1.2fr);
+    gap: 21px;
+  }
+
+  .threadmark-product-benefits__feature,
+  .threadmark-product-benefits__feature-image-wrapper {
+    min-height: 520px;
+  }
+
+  .threadmark-product-benefit {
+    min-height: 250px;
+    padding: 23px 20px;
+  }
+
+  .threadmark-product-benefit__content h3 {
+    font-size: 1.35rem;
+  }
+
+  .threadmark-customization-highlight {
+    padding: 94px 5%;
+  }
+
+  .threadmark-customization-highlight__container {
+    grid-template-columns: minmax(350px, 0.85fr) minmax(0, 1.15fr);
+    gap: 55px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper,
+  .threadmark-customization-highlight__image {
+    min-height: 550px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper {
+    border-radius: 205px 205px 25px 25px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper::before {
+    border-radius: 192px 192px 17px 17px;
+  }
+
+  .threadmark-customization-highlight__preview-text {
+    font-size: 5rem;
+  }
+
+  .threadmark-customization-highlight__title {
+    font-size: clamp(2.8rem, 4.5vw, 3.7rem);
+  }
+
+  .threadmark-bulk-cta {
+    padding: 84px 5%;
+  }
+
+  .threadmark-bulk-cta__card {
+    padding: 42px 60px 37px;
+  }
+
+  .threadmark-bulk-cta__title {
+    font-size: clamp(3rem, 4.7vw, 4rem);
+  }
+}
+
+@media screen and (width: 1024px) and (height: 600px) {
+  .threadmark-products-hero {
+    padding: 48px 5%;
+  }
+
+  .threadmark-products-hero__container {
+    grid-template-columns: minmax(0, 1fr) 390px;
+    gap: 42px;
+    min-height: 430px;
+  }
+
+  .threadmark-products-hero__title {
+    font-size: 3.7rem;
+  }
+
+  .threadmark-products-hero__description {
+    margin-top: 17px;
+    font-size: 0.86rem;
+    line-height: 1.65;
+  }
+
+  .threadmark-products-hero__actions {
+    margin-top: 22px;
+  }
+
+  .threadmark-products-hero__details {
+    gap: 16px;
+    margin-top: 25px;
+    padding-top: 18px;
+  }
+
+  .threadmark-products-hero__image-wrapper {
+    height: 420px;
+  }
+
+  .threadmark-products-hero__badge {
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .threadmark-shop-catalog {
+    padding: 70px 5%;
+  }
+
+  .threadmark-shop-catalog__heading {
+    margin-bottom: 36px;
+  }
+
+  .threadmark-shop-catalog__product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 16px;
+  }
+
+  .threadmark-product-card__wishlist {
+    opacity: 1;
+    transform: none;
+  }
+
+  .threadmark-product-benefits {
+    padding: 70px 5%;
+  }
+
+  .threadmark-product-benefits__heading {
+    margin-bottom: 38px;
+  }
+
+  .threadmark-product-benefits__layout {
+    grid-template-columns: 330px 1fr;
+    gap: 18px;
+  }
+
+  .threadmark-product-benefits__feature,
+  .threadmark-product-benefits__feature-image-wrapper {
+    min-height: 480px;
+  }
+
+  .threadmark-product-benefit {
+    min-height: 232px;
+    padding: 20px 18px;
+  }
+
+  .threadmark-product-benefit__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .threadmark-product-benefit__content h3 {
+    font-size: 1.25rem;
+  }
+
+  .threadmark-product-benefit__content p {
+    margin-top: 9px;
+    font-size: 0.68rem;
+  }
+
+  .threadmark-customization-highlight {
+    padding: 70px 5%;
+  }
+
+  .threadmark-customization-highlight__container {
+    grid-template-columns: 380px 1fr;
+    gap: 48px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper,
+  .threadmark-customization-highlight__image {
+    min-height: 500px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper {
+    border-radius: 190px 190px 24px 24px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper::before {
+    border-radius: 178px 178px 17px 17px;
+  }
+
+  .threadmark-customization-highlight__preview-text {
+    font-size: 4.6rem;
+  }
+
+  .threadmark-customization-highlight__description {
+    margin-top: 17px;
+    line-height: 1.65;
+  }
+
+  .threadmark-customization-highlight__options {
+    gap: 9px;
+    margin-top: 21px;
+  }
+
+  .threadmark-customization-highlight__option {
+    padding: 10px 12px;
+  }
+
+  .threadmark-customization-highlight__thread-selection {
+    margin-top: 20px;
+  }
+
+  .threadmark-customization-highlight__actions {
+    margin-top: 23px;
+  }
+
+  .threadmark-customization-highlight__note {
+    margin-top: 16px;
+  }
+
+  .threadmark-bulk-cta {
+    padding: 62px 5%;
+  }
+
+  .threadmark-bulk-cta__card {
+    padding: 36px 58px 32px;
+  }
+
+  .threadmark-bulk-cta__title {
+    font-size: 3.4rem;
+  }
+
+  .threadmark-bulk-cta__description {
+    margin-top: 15px;
+    line-height: 1.65;
+  }
+
+  .threadmark-bulk-cta__details {
+    margin-top: 22px;
+  }
+
+  .threadmark-bulk-cta__actions {
+    margin-top: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  .threadmark-products-hero {
+    padding: 72px 5%;
+  }
+
+  .threadmark-products-hero__container {
+    grid-template-columns: 1fr 0.82fr;
+    gap: 38px;
+    min-height: 470px;
+  }
+
+  .threadmark-products-hero__title {
+    font-size: clamp(3rem, 6vw, 4rem);
+  }
+
+  .threadmark-products-hero__description {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+
+  .threadmark-products-hero__actions {
+    gap: 10px;
+    margin-top: 26px;
+  }
+
+  .threadmark-products-hero__details {
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .threadmark-products-hero__detail {
+    font-size: 0.7rem;
+  }
+
+  .threadmark-products-hero__image-wrapper {
+    height: 450px;
+  }
+
+  .threadmark-products-hero__badge {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    max-width: none;
+  }
+
+  .threadmark-shop-catalog {
+    padding: 88px 5%;
+  }
+
+  .threadmark-shop-catalog__heading {
+    margin-bottom: 44px;
+  }
+
+  .threadmark-shop-catalog__category-list {
+    justify-content: flex-start;
+  }
+
+  .threadmark-shop-catalog__toolbar {
+    gap: 12px;
+  }
+
+  .threadmark-shop-catalog__search {
+    flex: 1;
+  }
+
+  .threadmark-shop-catalog__toolbar-actions {
+    gap: 8px;
+  }
+
+  .threadmark-shop-catalog__sort label {
+    display: none;
+  }
+
+  .threadmark-shop-catalog__sort select {
+    min-width: 140px;
+  }
+
+  .threadmark-shop-catalog__product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 17px;
+  }
+
+  .threadmark-product-card__wishlist {
+    opacity: 1;
+    transform: none;
+  }
+
+  .threadmark-product-benefits {
+    padding: 88px 5%;
+  }
+
+  .threadmark-product-benefits__heading {
+    margin-bottom: 46px;
+  }
+
+  .threadmark-product-benefits__layout {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 18px;
+  }
+
+  .threadmark-product-benefits__feature,
+  .threadmark-product-benefits__feature-image-wrapper {
+    min-height: 500px;
+  }
+
+  .threadmark-product-benefits__cards {
+    gap: 12px;
+  }
+
+  .threadmark-product-benefit {
+    min-height: 244px;
+    padding: 21px 18px;
+  }
+
+  .threadmark-product-benefit__icon {
+    margin-bottom: 17px;
+  }
+
+  .threadmark-product-benefit__content h3 {
+    font-size: 1.25rem;
+  }
+
+  .threadmark-product-benefit__content p {
+    font-size: 0.7rem;
+  }
+
+  .threadmark-product-benefits__bottom {
+    gap: 16px;
+  }
+
+  .threadmark-customization-highlight {
+    padding: 88px 5%;
+  }
+
+  .threadmark-customization-highlight__container {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 42px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper,
+  .threadmark-customization-highlight__image {
+    min-height: 520px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper {
+    border-radius: 180px 180px 24px 24px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper::before {
+    border-radius: 168px 168px 17px 17px;
+  }
+
+  .threadmark-customization-highlight__preview-text {
+    font-size: 4.5rem;
+  }
+
+  .threadmark-customization-highlight__visual-note {
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+  }
+
+  .threadmark-customization-highlight__title {
+    font-size: clamp(2.5rem, 5vw, 3.3rem);
+  }
+
+  .threadmark-customization-highlight__description {
+    margin-top: 18px;
+    font-size: 0.84rem;
+  }
+
+  .threadmark-customization-highlight__options {
+    margin-top: 24px;
+  }
+
+  .threadmark-customization-highlight__option {
+    padding: 11px 12px;
+  }
+
+  .threadmark-customization-highlight__thread-selection {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 23px;
+  }
+
+  .threadmark-bulk-cta {
+    padding: 78px 5%;
+  }
+
+  .threadmark-bulk-cta__card {
+    padding: 40px 48px 35px;
+  }
+
+  .threadmark-bulk-cta__title {
+    font-size: clamp(2.7rem, 5.5vw, 3.7rem);
+  }
+
+  .threadmark-bulk-cta__details {
+    flex-wrap: wrap;
+    gap: 15px 22px;
+  }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .threadmark-products-hero {
+    padding: 76px 5%;
+  }
+
+  .threadmark-products-hero__container {
+    grid-template-columns: minmax(0, 1fr) minmax(350px, 0.85fr);
+    gap: 46px;
+    min-height: 500px;
+  }
+
+  .threadmark-products-hero__title {
+    font-size: clamp(3.3rem, 5.5vw, 4.4rem);
+  }
+
+  .threadmark-products-hero__description {
+    max-width: 500px;
+  }
+
+  .threadmark-products-hero__details {
+    gap: 18px;
+  }
+
+  .threadmark-products-hero__image-wrapper {
+    height: 470px;
+  }
+
+  .threadmark-shop-catalog {
+    padding: 94px 5%;
+  }
+
+  .threadmark-shop-catalog__category-list {
+    justify-content: flex-start;
+  }
+
+  .threadmark-shop-catalog__product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 17px;
+  }
+
+  .threadmark-product-card__wishlist {
+    opacity: 1;
+    transform: none;
+  }
+
+  .threadmark-product-card__name {
+    font-size: 1.3rem;
+  }
+
+  .threadmark-product-benefits {
+    padding: 94px 5%;
+  }
+
+  .threadmark-product-benefits__layout {
+    grid-template-columns: minmax(310px, 0.8fr) minmax(0, 1.2fr);
+    gap: 21px;
+  }
+
+  .threadmark-product-benefits__feature,
+  .threadmark-product-benefits__feature-image-wrapper {
+    min-height: 520px;
+  }
+
+  .threadmark-product-benefit {
+    min-height: 250px;
+    padding: 23px 20px;
+  }
+
+  .threadmark-product-benefit__content h3 {
+    font-size: 1.35rem;
+  }
+
+  .threadmark-customization-highlight {
+    padding: 94px 5%;
+  }
+
+  .threadmark-customization-highlight__container {
+    grid-template-columns: minmax(350px, 0.85fr) minmax(0, 1.15fr);
+    gap: 55px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper,
+  .threadmark-customization-highlight__image {
+    min-height: 550px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper {
+    border-radius: 205px 205px 25px 25px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper::before {
+    border-radius: 192px 192px 17px 17px;
+  }
+
+  .threadmark-customization-highlight__preview-text {
+    font-size: 5rem;
+  }
+
+  .threadmark-customization-highlight__title {
+    font-size: clamp(2.8rem, 4.5vw, 3.7rem);
+  }
+
+  .threadmark-bulk-cta {
+    padding: 84px 5%;
+  }
+
+  .threadmark-bulk-cta__card {
+    padding: 42px 60px 37px;
+  }
+
+  .threadmark-bulk-cta__title {
+    font-size: clamp(3rem, 4.7vw, 4rem);
+  }
+}
+
+@media screen and (width: 1024px) and (height: 600px) {
+  .threadmark-products-hero {
+    padding: 48px 5%;
+  }
+
+  .threadmark-products-hero__container {
+    grid-template-columns: minmax(0, 1fr) 390px;
+    gap: 42px;
+    min-height: 430px;
+  }
+
+  .threadmark-products-hero__title {
+    font-size: 3.7rem;
+  }
+
+  .threadmark-products-hero__description {
+    margin-top: 17px;
+    font-size: 0.86rem;
+    line-height: 1.65;
+  }
+
+  .threadmark-products-hero__actions {
+    margin-top: 22px;
+  }
+
+  .threadmark-products-hero__details {
+    gap: 16px;
+    margin-top: 25px;
+    padding-top: 18px;
+  }
+
+  .threadmark-products-hero__image-wrapper {
+    height: 420px;
+  }
+
+  .threadmark-products-hero__badge {
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .threadmark-shop-catalog {
+    padding: 70px 5%;
+  }
+
+  .threadmark-shop-catalog__heading {
+    margin-bottom: 36px;
+  }
+
+  .threadmark-shop-catalog__product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 16px;
+  }
+
+  .threadmark-product-card__wishlist {
+    opacity: 1;
+    transform: none;
+  }
+
+  .threadmark-product-benefits {
+    padding: 70px 5%;
+  }
+
+  .threadmark-product-benefits__heading {
+    margin-bottom: 38px;
+  }
+
+  .threadmark-product-benefits__layout {
+    grid-template-columns: 330px 1fr;
+    gap: 18px;
+  }
+
+  .threadmark-product-benefits__feature,
+  .threadmark-product-benefits__feature-image-wrapper {
+    min-height: 480px;
+  }
+
+  .threadmark-product-benefit {
+    min-height: 232px;
+    padding: 20px 18px;
+  }
+
+  .threadmark-product-benefit__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .threadmark-product-benefit__content h3 {
+    font-size: 1.25rem;
+  }
+
+  .threadmark-product-benefit__content p {
+    margin-top: 9px;
+    font-size: 0.68rem;
+  }
+
+  .threadmark-customization-highlight {
+    padding: 70px 5%;
+  }
+
+  .threadmark-customization-highlight__container {
+    grid-template-columns: 380px 1fr;
+    gap: 48px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper,
+  .threadmark-customization-highlight__image {
+    min-height: 500px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper {
+    border-radius: 190px 190px 24px 24px;
+  }
+
+  .threadmark-customization-highlight__image-wrapper::before {
+    border-radius: 178px 178px 17px 17px;
+  }
+
+  .threadmark-customization-highlight__preview-text {
+    font-size: 4.6rem;
+  }
+
+  .threadmark-customization-highlight__description {
+    margin-top: 17px;
+    line-height: 1.65;
+  }
+
+  .threadmark-customization-highlight__options {
+    gap: 9px;
+    margin-top: 21px;
+  }
+
+  .threadmark-customization-highlight__option {
+    padding: 10px 12px;
+  }
+
+  .threadmark-customization-highlight__thread-selection {
+    margin-top: 20px;
+  }
+
+  .threadmark-customization-highlight__actions {
+    margin-top: 23px;
+  }
+
+  .threadmark-customization-highlight__note {
+    margin-top: 16px;
+  }
+
+  .threadmark-bulk-cta {
+    padding: 62px 5%;
+  }
+
+  .threadmark-bulk-cta__card {
+    padding: 36px 58px 32px;
+  }
+
+  .threadmark-bulk-cta__title {
+    font-size: 3.4rem;
+  }
+
+  .threadmark-bulk-cta__description {
+    margin-top: 15px;
+    line-height: 1.65;
+  }
+
+  .threadmark-bulk-cta__details {
+    margin-top: 22px;
+  }
+
+  .threadmark-bulk-cta__actions {
+    margin-top: 24px;
+  }
+}
