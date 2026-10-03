@@ -50,7 +50,7 @@
           aria-label="ThreadMark Home"
         >
           <img
-            src="./images/logo.png"
+            src="./images/logo2.png"
             alt="ThreadMark Logo"
             class="brand-logo"
             id="headerLogo"
@@ -107,9 +107,7 @@
           </li>
 
           <li>
-            <a href="bulk-orders.html">
-              Bulk &amp; Corporate Orders
-            </a>
+            <a href="bulk-orders.html"> Bulk &amp; Corporate Orders </a>
           </li>
 
           <li>
@@ -298,7 +296,7 @@
           <a href="products.html" class="category-card">
             <div class="category-card__media">
               <img
-                src="./images/whiteshirt.png"
+                src="./images/apparel1.png"
                 alt="Personalized embroidered white apparel"
               />
 
@@ -431,7 +429,7 @@
 
             <div class="craft-process__image-card">
               <span class="craft-process__image-card-icon">
-                <i data-lucide="heart"></i>
+                <i data-lucide="heart" aria-hidden="true"></i>
               </span>
 
               <div>
@@ -448,75 +446,274 @@
         </div>
 
         <div class="craft-process__content">
-          <span class="craft-process__eyebrow">Our Process</span>
+          <span class="craft-process__eyebrow">From Your Idea</span>
 
           <h2 id="craft-process-title">
-            From Your Idea to a
+            Create Your
             <span class="text-primary">Personal</span>
             <span class="text-secondary">Keepsake</span>
           </h2>
 
           <p class="craft-process__intro">
-            Every personalized piece begins with your idea and is finished with
-            thoughtful details, careful stitching, and genuine craftsmanship.
+            Choose your product, share your idea, and we’ll turn it into a
+            beautifully embroidered piece made especially for you.
           </p>
 
-          <div class="craft-process__steps">
-            <article class="craft-process__step">
-              <div class="craft-process__step-marker">
-                <span>01</span>
+          <form class="craft-process__form" id="customIdeaForm" novalidate>
+            <div class="craft-process__progress" aria-hidden="true">
+              <span
+                class="craft-process__progress-bar"
+                id="formProgressBar"
+              ></span>
+            </div>
+
+            <div class="craft-process__form-steps" aria-label="Form progress">
+              <span
+                class="craft-process__form-step is-active"
+                data-step-label="1"
+              >
+                Product
+              </span>
+
+              <span class="craft-process__form-step" data-step-label="2">
+                Design
+              </span>
+
+              <span class="craft-process__form-step" data-step-label="3">
+                Details
+              </span>
+            </div>
+
+            <!-- STEP 1 -->
+            <div
+              class="craft-process__form-panel is-active"
+              data-form-panel="1"
+            >
+              <h3 class="craft-process__form-title">Choose your product</h3>
+
+              <div class="craft-process__product-grid">
+                <label class="craft-process__product">
+                  <input type="radio" name="product" value="Apparel" required />
+
+                  <span class="craft-process__product-card">
+                    <i data-lucide="shirt" aria-hidden="true"></i>
+                    <strong>Apparel</strong>
+                    <small>Shirts, hoodies & caps</small>
+                  </span>
+                </label>
+
+                <label class="craft-process__product">
+                  <input type="radio" name="product" value="Towels" />
+
+                  <span class="craft-process__product-card">
+                    <i data-lucide="waves" aria-hidden="true"></i>
+                    <strong>Towels</strong>
+                    <small>Beach, bath & gym towels</small>
+                  </span>
+                </label>
+
+                <label class="craft-process__product">
+                  <input type="radio" name="product" value="Bags" />
+
+                  <span class="craft-process__product-card">
+                    <i data-lucide="briefcase" aria-hidden="true"></i>
+                    <strong>Bags</strong>
+                    <small>Totes, pouches & backpacks</small>
+                  </span>
+                </label>
+
+                <label class="craft-process__product">
+                  <input type="radio" name="product" value="Home Linens" />
+
+                  <span class="craft-process__product-card">
+                    <i data-lucide="home" aria-hidden="true"></i>
+                    <strong>Home Linens</strong>
+                    <small>Cushions, bedding & décor</small>
+                  </span>
+                </label>
               </div>
 
-              <div class="craft-process__step-body">
-                <h3>Choose Your Product</h3>
-                <p>Select apparel, towels, bags, or home linens.</p>
-              </div>
-            </article>
+              <p class="craft-process__validation-message" id="productError">
+                Please choose a product before continuing.
+              </p>
 
-            <article class="craft-process__step">
-              <div class="craft-process__step-marker">
-                <span>02</span>
+              <div class="craft-process__form-actions">
+                <button
+                  type="button"
+                  class="btn-primary craft-process__form-next"
+                  data-next-step="2"
+                >
+                  Continue
+                  <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="craft-process__form-panel" data-form-panel="2">
+              <h3 class="craft-process__form-title">Share your design idea</h3>
+
+              <div class="craft-process__field">
+                <label for="ideaType">What would you like embroidered?</label>
+
+                <select id="ideaType" name="ideaType" required>
+                  <option value="" selected disabled>Select an option</option>
+                  <option value="Name or initials">Name or initials</option>
+                  <option value="Custom logo">Custom logo</option>
+                  <option value="Artwork or illustration">
+                    Artwork or illustration
+                  </option>
+                  <option value="Text or quote">Text or quote</option>
+                  <option value="Gift message">Gift message</option>
+                  <option value="Other idea">Other idea</option>
+                </select>
               </div>
 
-              <div class="craft-process__step-body">
-                <h3>Share Your Design</h3>
-                <p>Upload artwork, names, initials, or special instructions.</p>
-              </div>
-            </article>
+              <div class="craft-process__field">
+                <label for="designDetails">Describe your idea</label>
 
-            <article class="craft-process__step">
-              <div class="craft-process__step-marker">
-                <span>03</span>
-              </div>
-
-              <div class="craft-process__step-body">
-                <h3>We Embroider With Care</h3>
-                <p>
-                  Your design is stitched using carefully selected thread and
-                  materials.
-                </p>
-              </div>
-            </article>
-
-            <article class="craft-process__step">
-              <div class="craft-process__step-marker">
-                <span>04</span>
+                <textarea
+                  id="designDetails"
+                  name="designDetails"
+                  rows="4"
+                  placeholder="Share names, initials, colors, placement, quantity, or any special instructions..."
+                  required
+                ></textarea>
               </div>
 
-              <div class="craft-process__step-body">
-                <h3>Receive Something Meaningful</h3>
-                <p>Enjoy a finished piece created especially for you.</p>
-              </div>
-            </article>
-          </div>
+              <div class="craft-process__field">
+                <label for="designFile"
+                  >Upload artwork or a reference image</label
+                >
 
-          <a
-            href="custom-design-upload.html"
-            class="btn-primary craft-process__button"
-          >
-            How It Works
-            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-          </a>
+                <div class="craft-process__upload">
+                  <input
+                    type="file"
+                    id="designFile"
+                    name="designFile"
+                    accept="image/*,.pdf,.ai,.eps,.svg"
+                  />
+
+                  <label for="designFile" class="craft-process__upload-label">
+                    <i data-lucide="upload" aria-hidden="true"></i>
+
+                    <span class="craft-process__upload-copy">
+                      <strong id="fileName">Choose file</strong>
+                      <small>PNG, JPG, PDF, AI, EPS or SVG</small>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="craft-process__form-actions">
+                <button
+                  type="button"
+                  class="craft-process__form-back"
+                  data-prev-step="1"
+                >
+                  <i data-lucide="arrow-left" aria-hidden="true"></i>
+                  Back
+                </button>
+
+                <button
+                  type="button"
+                  class="btn-primary craft-process__form-next"
+                  data-next-step="3"
+                >
+                  Continue
+                  <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="craft-process__form-panel" data-form-panel="3">
+              <h3 class="craft-process__form-title">Your contact details</h3>
+
+              <div class="craft-process__field-row">
+                <div class="craft-process__field">
+                  <label for="customerName">Full name</label>
+
+                  <input
+                    type="text"
+                    id="customerName"
+                    name="customerName"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+
+                <div class="craft-process__field">
+                  <label for="customerPhone">Phone number</label>
+
+                  <input
+                    type="tel"
+                    id="customerPhone"
+                    name="customerPhone"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="craft-process__field">
+                <label for="customerEmail">Email address</label>
+
+                <input
+                  type="email"
+                  id="customerEmail"
+                  name="customerEmail"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <div class="craft-process__field">
+                <label for="orderNotes">Additional notes</label>
+
+                <textarea
+                  id="orderNotes"
+                  name="orderNotes"
+                  rows="3"
+                  placeholder="Deadline, delivery location, bulk order details, or anything else we should know..."
+                ></textarea>
+              </div>
+
+              <div class="craft-process__form-actions">
+                <button
+                  type="button"
+                  class="craft-process__form-back"
+                  data-prev-step="2"
+                >
+                  <i data-lucide="arrow-left" aria-hidden="true"></i>
+                  Back
+                </button>
+
+                <button
+                  type="submit"
+                  class="btn-primary craft-process__form-submit"
+                >
+                  Submit My Idea
+                  <i data-lucide="send" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- HIDDEN UNTIL THE FORM IS SUBMITTED -->
+            <p
+              class="craft-process__form-success"
+              id="formSuccessMessage"
+              role="status"
+              aria-live="polite"
+              hidden
+            >
+              <i data-lucide="circle-check-big" aria-hidden="true"></i>
+              <span>
+                Thank you! Your custom idea has been submitted. Our team will
+                contact you shortly.
+              </span>
+            </p>
+          </form>
         </div>
       </div>
     </section>
@@ -1099,7 +1296,7 @@
       <div class="customer-reviews__container">
         <div class="customer-reviews__header">
           <div class="customer-reviews__heading">
-            <span class="customer-reviews__eyebrow"> Kind Words </span>
+            <span class="customer-reviews__eyebrow">Kind Words</span>
 
             <h2 id="customer-reviews-title">
               Loved by People Who
@@ -1134,7 +1331,13 @@
 
             <div class="review-card__footer">
               <div class="review-card__customer">
-                <span class="review-card__avatar">E</span>
+                <span class="review-card__avatar">
+                  <img
+                    src="./images/emily-review.jpg"
+                    alt="Emily R."
+                    class="review-card__avatar-image"
+                  />
+                </span>
 
                 <div>
                   <h3>Emily R.</h3>
@@ -1142,7 +1345,7 @@
                 </div>
               </div>
 
-              <span class="review-card__product"> Monogrammed Towels </span>
+              <span class="review-card__product">Monogrammed Towels</span>
             </div>
           </article>
 
@@ -1166,7 +1369,13 @@
 
             <div class="review-card__footer">
               <div class="review-card__customer">
-                <span class="review-card__avatar">S</span>
+                <span class="review-card__avatar">
+                  <img
+                    src="./images/sarah-review.jpg"
+                    alt="Sarah M."
+                    class="review-card__avatar-image"
+                  />
+                </span>
 
                 <div>
                   <h3>Sarah M.</h3>
@@ -1174,7 +1383,7 @@
                 </div>
               </div>
 
-              <span class="review-card__product"> Personalized Tote Bag </span>
+              <span class="review-card__product">Personalized Tote Bag</span>
             </div>
           </article>
 
@@ -1198,7 +1407,13 @@
 
             <div class="review-card__footer">
               <div class="review-card__customer">
-                <span class="review-card__avatar">A</span>
+                <span class="review-card__avatar">
+                  <img
+                    src="./images/amelia-review.jpg"
+                    alt="Amelia K."
+                    class="review-card__avatar-image"
+                  />
+                </span>
 
                 <div>
                   <h3>Amelia K.</h3>
@@ -1206,7 +1421,7 @@
                 </div>
               </div>
 
-              <span class="review-card__product"> Embroidered Robe </span>
+              <span class="review-card__product">Embroidered Robe</span>
             </div>
           </article>
         </div>
@@ -1368,15 +1583,11 @@
             </li>
 
             <li>
-              <a href="custom-design.html">
-                Custom Design Upload
-              </a>
+              <a href="custom-design.html"> Custom Design Upload </a>
             </li>
 
             <li>
-              <a href="bulk-orders.html">
-                Bulk &amp; Corporate Orders
-              </a>
+              <a href="bulk-orders.html"> Bulk &amp; Corporate Orders </a>
             </li>
 
             <li>
@@ -1418,9 +1629,7 @@
 
           <ul class="footer-links">
             <li>
-              <a href="custom-design.html">
-                Upload Your Design
-              </a>
+              <a href="custom-design.html"> Upload Your Design </a>
             </li>
 
             <li>
@@ -1447,7 +1656,7 @@
           <ul class="contact">
             <li>
               <span class="contact-icon">
-                <i data-lucide="map-pin"></i>
+                <i data-lucide="map-pin" aria-hidden="true"></i>
               </span>
 
               <span>Hyderabad, Telangana</span>
@@ -1455,7 +1664,7 @@
 
             <li>
               <span class="contact-icon">
-                <i data-lucide="phone"></i>
+                <i data-lucide="phone" aria-hidden="true"></i>
               </span>
 
               <span>+91 98765 43210</span>
@@ -1463,17 +1672,46 @@
 
             <li>
               <span class="contact-icon">
-                <i data-lucide="mail"></i>
+                <i data-lucide="mail" aria-hidden="true"></i>
               </span>
 
               <span>hello@threadmark.com</span>
             </li>
           </ul>
 
-          <a href="contact.html" class="btn-primary footer-quote">
+          <form class="footer-email-form" id="footerEmailForm" novalidate>
+            <div class="footer-email-form__field">
+              <input
+                type="email"
+                id="footerEmail"
+                name="footerEmail"
+                value=""
+                placeholder="Enter your email"
+                autocomplete="email"
+                aria-label="Enter your email"
+              />
+            </div>
+          </form>
+
+          <button
+            type="button"
+            class="btn-primary footer-quote"
+            id="requestQuoteButton"
+          >
             <span>Request a Quote</span>
-            <i data-lucide="arrow-up-right"></i>
-          </a>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </button>
+
+          <p
+            class="footer-quote-message"
+            id="footerQuoteMessage"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <i data-lucide="circle-check-big" aria-hidden="true"></i>
+            <span>Message sent! We’ll contact you soon.</span>
+          </p>
         </div>
       </div>
 

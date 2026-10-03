@@ -488,7 +488,6 @@
   margin-top: 4px;
 
   color: var(--secondary);
-
 }
 
 .brand-intro__lead {
@@ -1040,8 +1039,6 @@
   margin-top: 4px;
 
   color: var(--secondary);
-
-  
 }
 
 .our-story__gold-line {
@@ -1105,7 +1102,6 @@
 
   font-family: var(--heading-font);
   font-size: 0.94rem;
-
 
   line-height: 1.55;
 }
@@ -1216,7 +1212,7 @@
 .our-story__detail > div span {
   color: var(--muted);
 
-  font-size: 0.63rem;
+  font-size: 0.73rem;
 
   line-height: 1.45;
 }
@@ -1282,7 +1278,6 @@
 
 .keepsake-section__title span {
   color: var(--secondary);
- 
 }
 
 .keepsake-section__intro {
@@ -1563,8 +1558,6 @@
   margin-top: 4px;
 
   color: var(--secondary);
-
- 
 }
 
 .beliefs-section__description {
@@ -1605,7 +1598,6 @@
 
   font-family: var(--heading-font);
   font-size: 1.05rem;
-  
 
   line-height: 1.5;
 }
@@ -2011,8 +2003,6 @@
 
 .about-cta__title span {
   color: var(--secondary);
-
-
 }
 
 .about-cta__description {

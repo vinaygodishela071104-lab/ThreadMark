@@ -415,3 +415,41 @@ function initializeBackToTop() {
     });
   });
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const footerEmailForm = document.getElementById("footerEmailForm");
+  const footerEmail = document.getElementById("footerEmail");
+  const requestQuoteButton = document.getElementById("requestQuoteButton");
+  const footerQuoteMessage = document.getElementById("footerQuoteMessage");
+
+  if (
+    !footerEmailForm ||
+    !footerEmail ||
+    !requestQuoteButton ||
+    !footerQuoteMessage
+  ) {
+    return;
+  }
+
+  let messageTimeout;
+
+  requestQuoteButton.addEventListener("click", () => {
+    const emailValue = footerEmail.value.trim();
+
+    clearTimeout(messageTimeout);
+
+    footerEmailForm.reset();
+    footerEmail.blur();
+
+    footerQuoteMessage.hidden = false;
+    footerQuoteMessage.classList.add("is-visible");
+
+    if (typeof lucide !== "undefined") {
+      lucide.createIcons();
+    }
+
+    messageTimeout = setTimeout(() => {
+      footerQuoteMessage.classList.remove("is-visible");
+      footerQuoteMessage.hidden = true;
+    }, 4500);
+  });
+});

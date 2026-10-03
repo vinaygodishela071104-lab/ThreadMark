@@ -531,7 +531,89 @@ body {
 
   stroke-width: 2;
 }
+.footer-email-form {
+  width: 100%;
+  margin: 14px 0 9px;
+}
 
+.footer-email-form__field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 42px;
+  overflow: hidden;
+  border: 1px solid var(--secondary);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.08);
+  transition: var(--transition);
+}
+
+.footer-email-form__field:focus-within {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(165, 117, 56, 0.18);
+}
+
+.footer-email-form__field input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 40px;
+  margin: 0;
+  padding: 0 15px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--white);
+  font-family: var(--body-font);
+  font-size: 0.78rem;
+  line-height: 1;
+}
+
+.footer-email-form__field input::placeholder {
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.footer-email-form__field input:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.72);
+  outline-offset: -5px;
+}
+
+.footer-quote {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+.footer-quote svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-quote-message {
+  display: none;
+  align-items: center;
+  gap: 7px;
+  margin: 9px 0 0;
+  color: var(--secondary);
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.footer-quote-message.is-visible {
+  display: flex;
+}
+
+.footer-quote-message svg {
+  flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
+}
 .social {
   display: flex;
 
@@ -576,10 +658,20 @@ body {
   transform: translateY(-4px);
 }
 
-.footer-quote {
-  margin-top: 22px;
+.footer-email-form__field input::placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
+.footer-email-form__field input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.footer-email-form__field input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
 .footer-bottom {
   width: 100%;
   max-width: 1500px;

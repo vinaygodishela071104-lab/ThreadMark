@@ -7,6 +7,7 @@
   padding: 38px 6% 42px;
   background: var(--surface-alt);
   isolation: isolate;
+  transition: var(--theme-transition);
 }
 
 .threadmark-custom-design-hero::before {
@@ -82,7 +83,7 @@
   margin: 0;
   color: var(--primary);
   font-family: var(--heading-font);
-  font-size: clamp(3.6rem, 4.7vw, 5rem);
+  font-size: var(--hero-heading-size);
   font-weight: var(--hero-heading-weight);
   letter-spacing: -0.025em;
   line-height: 0.96;
@@ -151,6 +152,7 @@
   stroke-width: 1.8;
 }
 
+/* Right-side image visual */
 .threadmark-custom-design-hero__visual {
   position: relative;
   display: flex;
@@ -158,14 +160,15 @@
   justify-content: center;
   width: 100%;
   max-width: 610px;
+  min-height: 470px;
   margin: 0 auto;
   padding: 18px;
 }
 
 .threadmark-custom-design-hero__visual-accent {
   position: absolute;
-  inset: 0;
   z-index: 0;
+  inset: 0;
   border: 1px solid rgba(165, 117, 56, 0.2);
   border-radius: 30px;
   pointer-events: none;
@@ -185,356 +188,274 @@
   content: "";
 }
 
-.threadmark-custom-design-hero__preview {
+.threadmark-custom-design-hero__image-card {
   position: relative;
   z-index: 2;
   width: 100%;
+  min-height: 440px;
   overflow: hidden;
-  border: 1px solid rgba(165, 117, 56, 0.3);
+  border: 1px solid rgba(165, 117, 56, 0.34);
   border-radius: 20px;
-  background: var(--surface);
+  background: var(--primary);
   box-shadow: var(--shadow-panel);
-}
-
-.threadmark-custom-design-hero__preview-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  min-height: 60px;
-  padding: 10px 18px;
-  border-bottom: 1px solid var(--border);
-  background: var(--surface);
-}
-
-.threadmark-custom-design-hero__preview-heading {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.threadmark-custom-design-hero__preview-kicker {
-  color: var(--secondary);
-  font-size: 0.5rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.threadmark-custom-design-hero__preview-label {
-  color: var(--primary);
-  font-family: var(--heading-font);
-  font-size: 1.08rem;
-  font-weight: 600;
-  line-height: 1;
-}
-
-.threadmark-custom-design-hero__preview-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
-  padding: 6px 10px;
-  border: 1px solid rgba(165, 117, 56, 0.22);
-  border-radius: var(--radius-pill);
-  background: rgba(165, 117, 56, 0.07);
-  color: var(--secondary);
-  font-size: 0.58rem;
-  font-weight: 600;
-}
-
-.threadmark-custom-design-hero__preview-status svg {
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-  stroke-width: 1.8;
-}
-
-.threadmark-custom-design-hero__fabric {
-  position: relative;
-  display: grid;
-  min-height: 285px;
-  overflow: hidden;
-  place-items: center;
-  background:
-    radial-gradient(
-      circle at 50% 45%,
-      rgba(255, 255, 255, 0.07),
-      transparent 34%
-    ),
-    linear-gradient(135deg, #00365c 0%, #064d78 52%, #00365c 100%);
   isolation: isolate;
 }
 
-.threadmark-custom-design-hero__fabric::before {
+.threadmark-custom-design-hero__image-card::before {
   position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    repeating-linear-gradient(
-      0deg,
-      transparent 0,
-      transparent 5px,
-      rgba(255, 255, 255, 0.06) 6px,
-      transparent 7px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent 0,
-      transparent 5px,
-      rgba(255, 255, 255, 0.05) 6px,
-      transparent 7px
-    );
-  content: "";
-}
-
-.threadmark-custom-design-hero__fabric::after {
-  position: absolute;
-  inset: 14px;
-  z-index: -1;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 12px;
+  z-index: 3;
+  inset: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 13px;
   content: "";
   pointer-events: none;
 }
 
-.threadmark-custom-design-hero__fabric-label {
+.threadmark-custom-design-hero__image {
   position: absolute;
-  top: 16px;
-  left: 17px;
-  z-index: 2;
-  padding: 6px 9px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  z-index: -2;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.02);
+  transition: transform 0.8s ease;
+}
+
+.threadmark-custom-design-hero__image-card:hover
+  .threadmark-custom-design-hero__image {
+  transform: scale(1.07);
+}
+
+.threadmark-custom-design-hero__image-shade {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 54, 92, 0.42) 0%,
+      rgba(0, 54, 92, 0.12) 42%,
+      transparent 68%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0, 22, 38, 0.08) 0%,
+      transparent 42%,
+      rgba(0, 22, 38, 0.78) 100%
+    );
+  pointer-events: none;
+}
+
+.threadmark-custom-design-hero__image-badge {
+  position: absolute;
+  z-index: 4;
+  top: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(0, 35, 59, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.threadmark-custom-design-hero__image-badge-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.threadmark-custom-design-hero__image-badge-icon svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 1.7;
+}
+
+.threadmark-custom-design-hero__image-badge div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.threadmark-custom-design-hero__image-badge div span {
   color: rgba(255, 255, 255, 0.72);
   font-size: 0.53rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   line-height: 1.2;
   text-transform: uppercase;
-  backdrop-filter: blur(8px);
 }
 
-.threadmark-custom-design-hero__stitch {
+.threadmark-custom-design-hero__image-badge strong {
+  color: var(--white);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.threadmark-custom-design-hero__image-caption {
   position: absolute;
-  display: block;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: var(--radius-round);
-  pointer-events: none;
-}
-
-.threadmark-custom-design-hero__stitch--one {
-  top: -145px;
-  left: -100px;
-  width: 300px;
-  height: 300px;
-}
-
-.threadmark-custom-design-hero__stitch--two {
-  right: -115px;
-  bottom: -180px;
-  width: 370px;
-  height: 370px;
-  border-color: rgba(165, 117, 56, 0.38);
-}
-
-.threadmark-custom-design-hero__stitch--three {
-  top: 30px;
-  right: 17%;
-  width: 72px;
-  height: 72px;
-  border-color: rgba(165, 117, 56, 0.34);
-}
-
-.threadmark-custom-design-hero__monogram {
-  position: relative;
-  z-index: 2;
+  z-index: 4;
+  right: 25px;
+  bottom: 24px;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.threadmark-custom-design-hero__monogram-ornament {
-  display: grid;
-  width: 28px;
-  height: 28px;
-  margin-bottom: 8px;
-  place-items: center;
-  border: 1px solid rgba(165, 117, 56, 0.65);
-  border-radius: var(--radius-round);
-  color: var(--secondary);
-}
-
-.threadmark-custom-design-hero__monogram-ornament svg {
-  width: 13px;
-  height: 13px;
-  stroke-width: 1.6;
-}
-
-.threadmark-custom-design-hero__monogram-small {
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.54rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-}
-
-.threadmark-custom-design-hero__initials {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  margin-top: 9px;
-  color: var(--secondary);
-  font-family: var(--heading-font);
-  font-size: 5.5rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  line-height: 0.78;
-  text-shadow:
-    0 2px 0 rgba(255, 255, 255, 0.12),
-    0 8px 25px rgba(0, 0, 0, 0.25);
-}
-
-.threadmark-custom-design-hero__initials::before,
-.threadmark-custom-design-hero__initials::after {
-  position: absolute;
-  top: 50%;
-  width: 40px;
-  height: 1px;
-  background: rgba(165, 117, 56, 0.75);
-  content: "";
-}
-
-.threadmark-custom-design-hero__initials::before {
-  right: calc(100% + 16px);
-}
-
-.threadmark-custom-design-hero__initials::after {
-  left: calc(100% + 16px);
-}
-
-.threadmark-custom-design-hero__initial {
-  position: relative;
-  display: inline-block;
-}
-
-.threadmark-custom-design-hero__initial:first-child {
-  transform: translateY(-4px);
-}
-
-.threadmark-custom-design-hero__initial:last-child {
-  margin-left: -5px;
-  transform: translateY(5px);
-}
-
-.threadmark-custom-design-hero__initial::after {
-  position: absolute;
-  right: 4px;
-  bottom: -7px;
-  left: 4px;
-  height: 2px;
-  background: var(--secondary);
-  content: "";
-  opacity: 0.72;
-}
-
-.threadmark-custom-design-hero__monogram-line {
-  width: 54px;
-  height: 1px;
-  margin-top: 17px;
-  background: var(--secondary);
-}
-
-.threadmark-custom-design-hero__monogram-caption {
-  margin-top: 7px;
-  color: rgba(255, 255, 255, 0.66);
-  font-size: 0.54rem;
-  font-weight: 500;
+  gap: 10px;
+  color: var(--white);
+  font-size: 0.56rem;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.threadmark-custom-design-hero__placement {
-  position: absolute;
-  right: 15px;
-  bottom: 14px;
-  z-index: 2;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 9px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--radius-pill);
-  background: rgba(0, 30, 51, 0.4);
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.57rem;
-  backdrop-filter: blur(8px);
-}
-
-.threadmark-custom-design-hero__placement svg {
-  width: 13px;
-  height: 13px;
-  flex-shrink: 0;
-  stroke-width: 1.8;
-}
-
-.threadmark-custom-design-hero__preview-bottom {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  min-height: 64px;
-  border-top: 1px solid var(--border);
-  background: var(--surface);
-}
-
-.threadmark-custom-design-hero__setting {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  min-width: 0;
-  padding: 10px 16px;
-}
-
-.threadmark-custom-design-hero__setting
-  + .threadmark-custom-design-hero__setting {
-  border-left: 1px solid var(--border);
-}
-
-.threadmark-custom-design-hero__setting-icon {
-  display: grid;
-  width: 30px;
-  height: 30px;
-  flex: 0 0 30px;
-  place-items: center;
-  border-radius: var(--radius-round);
-  background: rgba(165, 117, 56, 0.1);
+.threadmark-custom-design-hero__image-caption > span:first-child {
   color: var(--secondary);
 }
 
-.threadmark-custom-design-hero__setting-icon svg {
-  width: 14px;
-  height: 14px;
-  stroke-width: 1.8;
+.threadmark-custom-design-hero__image-caption-line {
+  width: 30px;
+  height: 1px;
+  background: var(--secondary);
 }
 
-.threadmark-custom-design-hero__setting > span:last-child {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-  gap: 2px;
-  color: var(--primary);
-  font-size: 0.66rem;
-  font-weight: 600;
+@media (max-width: 1100px) {
+  .threadmark-custom-design-hero {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .threadmark-custom-design-hero__container {
+    grid-template-columns: minmax(0, 0.9fr) minmax(390px, 1.1fr);
+    gap: 45px;
+  }
+
+  .threadmark-custom-design-hero__title {
+    font-size: clamp(3.1rem, 5vw, 4.2rem);
+  }
+
+  .threadmark-custom-design-hero__visual {
+    min-height: 420px;
+  }
+
+  .threadmark-custom-design-hero__image-card {
+    min-height: 395px;
+  }
 }
 
-.threadmark-custom-design-hero__setting small {
-  color: var(--muted);
-  font-size: 0.54rem;
-  font-weight: 400;
+@media (max-width: 820px) {
+  .threadmark-custom-design-hero {
+    min-height: auto;
+    padding: 72px 24px 58px;
+  }
+
+  .threadmark-custom-design-hero__container {
+    grid-template-columns: 1fr;
+    gap: 46px;
+  }
+
+  .threadmark-custom-design-hero__content {
+    max-width: 640px;
+  }
+
+  .threadmark-custom-design-hero__visual {
+    max-width: 620px;
+    min-height: 390px;
+    padding: 12px;
+  }
+
+  .threadmark-custom-design-hero__image-card {
+    min-height: 370px;
+  }
+}
+
+@media (max-width: 560px) {
+  .threadmark-custom-design-hero {
+    padding: 58px 16px 48px;
+  }
+
+  .threadmark-custom-design-hero__title {
+    font-size: clamp(2.7rem, 13vw, 3.6rem);
+    line-height: 0.98;
+  }
+
+  .threadmark-custom-design-hero__description {
+    font-size: 0.84rem;
+    line-height: 1.7;
+  }
+
+  .threadmark-custom-design-hero__actions {
+    flex-direction: column;
+  }
+
+  .threadmark-custom-design-hero__actions .btn-primary,
+  .threadmark-custom-design-hero__actions .btn-secondary {
+    width: 100%;
+  }
+
+  .threadmark-custom-design-hero__trust {
+    gap: 10px 14px;
+  }
+
+  .threadmark-custom-design-hero__trust-item {
+    font-size: 0.62rem;
+  }
+
+  .threadmark-custom-design-hero__visual {
+    min-height: 320px;
+    padding: 8px;
+  }
+
+  .threadmark-custom-design-hero__visual-accent {
+    border-radius: var(--radius-lg);
+  }
+
+  .threadmark-custom-design-hero__image-card {
+    min-height: 305px;
+    border-radius: var(--radius-md);
+  }
+
+  .threadmark-custom-design-hero__image-card::before {
+    inset: 8px;
+    border-radius: calc(var(--radius-md) - 4px);
+  }
+
+  .threadmark-custom-design-hero__image-badge {
+    top: 16px;
+    left: 16px;
+    gap: 8px;
+    padding: 8px 10px;
+  }
+
+  .threadmark-custom-design-hero__image-badge-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .threadmark-custom-design-hero__image-badge strong {
+    font-size: 0.6rem;
+  }
+
+  .threadmark-custom-design-hero__image-caption {
+    right: 17px;
+    bottom: 17px;
+    gap: 7px;
+    font-size: 0.48rem;
+  }
+
+  .threadmark-custom-design-hero__image-caption-line {
+    width: 20px;
+  }
 }
 .threadmark-design-type {
   position: relative;
@@ -734,7 +655,7 @@
 
 .threadmark-design-type__card-content small {
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.65;
 }
@@ -1065,7 +986,7 @@
 .threadmark-design-products__description {
   margin: 14px 0 0;
   color: var(--muted);
-  font-size: 0.69rem;
+  font-size: 0.8rem;
   line-height: 1.65;
 }
 

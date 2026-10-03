@@ -162,12 +162,15 @@
         </button>
       </div>
     </header>
-    <section class="home2-hero">
-      <div class="home2-hero__background"></div>
+    <section class="home2-hero" aria-labelledby="home2-hero-title">
+      <img
+        src="./images/hero.png"
+        alt=""
+        class="home2-hero__background-image"
+        aria-hidden="true"
+      />
 
-      <div class="home2-hero__overlay"></div>
-      <div class="home2-hero__vignette"></div>
-      <div class="home2-hero__transition-mask"></div>
+      <div class="home2-hero__overlay" aria-hidden="true"></div>
 
       <div class="home2-hero__container">
         <div class="home2-hero__content">
@@ -176,7 +179,7 @@
             <span>Custom Embroidery &amp; Monogramming</span>
           </div>
 
-          <h1 class="home2-hero__title">
+          <h1 class="home2-hero__title" id="home2-hero-title">
             Crafted With
             <span>Meaning.</span>
             Made For You.
@@ -191,22 +194,19 @@
           <div class="home2-hero__buttons">
             <a href="custom-design.html" class="btn-primary">
               <span>Create Your Design</span>
-              <i data-lucide="arrow-right"></i>
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
             </a>
 
-            <a
-              href="products.html"
-              class="btn-secondary home2-hero__secondary"
-            >
+            <a href="products.html" class="btn-secondary home2-hero__secondary">
               <span>Explore Products</span>
-              <i data-lucide="arrow-up-right"></i>
+              <i data-lucide="arrow-up-right" aria-hidden="true"></i>
             </a>
           </div>
 
-          <div class="home2-hero__benefits">
+          <div class="home2-hero__benefits" aria-label="ThreadMark benefits">
             <div class="home2-hero__benefit">
               <span class="home2-hero__benefit-icon">
-                <i data-lucide="gem"></i>
+                <i data-lucide="gem" aria-hidden="true"></i>
               </span>
 
               <div>
@@ -215,11 +215,11 @@
               </div>
             </div>
 
-            <span class="home2-hero__benefit-divider"></span>
+            <span class="home2-hero__benefit-divider" aria-hidden="true"></span>
 
             <div class="home2-hero__benefit">
               <span class="home2-hero__benefit-icon">
-                <i data-lucide="scan-line"></i>
+                <i data-lucide="scan-line" aria-hidden="true"></i>
               </span>
 
               <div>
@@ -228,11 +228,11 @@
               </div>
             </div>
 
-            <span class="home2-hero__benefit-divider"></span>
+            <span class="home2-hero__benefit-divider" aria-hidden="true"></span>
 
             <div class="home2-hero__benefit">
               <span class="home2-hero__benefit-icon">
-                <i data-lucide="heart"></i>
+                <i data-lucide="heart" aria-hidden="true"></i>
               </span>
 
               <div>
@@ -243,41 +243,37 @@
           </div>
         </div>
 
-        <div class="home2-hero__visual">
-          <div class="home2-hero__video-wrap">
-            <video
-              class="home2-hero__video"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-              poster="./images/premium.png"
-            >
-              <source src="./images/stiching.mp4" type="video/mp4" />
-            </video>
+        <aside
+          class="home2-hero__glass-card"
+          aria-label="ThreadMark craftsmanship"
+        >
+          <div class="home2-hero__glass-card-image-wrap">
+            <img
+              src="./images/stiching1.png"
+              alt="Detailed custom embroidery craftsmanship"
+              class="home2-hero__glass-card-image"
+            />
 
-            <div class="home2-hero__video-shade"></div>
+            <div class="home2-hero__glass-card-image-shade"></div>
 
-            <div class="home2-hero__video-label">
-              <span class="home2-hero__video-label-dot"></span>
-
-              <div>
-                <span>Inside Our Craft</span>
-                <strong>Watch the Process</strong>
-              </div>
-            </div>
-
-            <div class="home2-hero__video-corner">
-              <span>01</span>
-              <span class="home2-hero__corner-line"></span>
-              <span>Crafted With Precision</span>
-            </div>
+            <span class="home2-hero__glass-card-badge">
+              <span class="home2-hero__glass-card-badge-dot"></span>
+              Made with care
+            </span>
           </div>
-        </div>
+
+          <div class="home2-hero__glass-card-footer">
+            <div>
+              <span>Inside Our Craft</span>
+              <strong>Personal in Every Stitch</strong>
+            </div>
+
+            <span class="home2-hero__glass-card-number">01</span>
+          </div>
+        </aside>
       </div>
 
-      <div class="home2-hero__bottom">
+      <div class="home2-hero__bottom" aria-label="Brand values">
         <span>Personal</span>
         <span class="home2-hero__bottom-dot"></span>
         <span>Premium</span>
@@ -285,13 +281,16 @@
         <span>Timeless</span>
       </div>
 
-      <a href="" class="home2-hero__scroll">
+      <a
+        href="#next-section"
+        class="home2-hero__scroll"
+        aria-label="Scroll down"
+      >
         <span>Scroll</span>
         <span class="home2-hero__scroll-line"></span>
-        <i data-lucide="arrow-down"></i>
+        <i data-lucide="arrow-down" aria-hidden="true"></i>
       </a>
     </section>
-
     <section class="gifts-section" aria-labelledby="gifts-heading">
       <div class="gifts-grid">
         <div class="gifts-visual">
@@ -474,10 +473,7 @@
 
       <div class="lookbook-grid">
         <article class="lookbook-card lookbook-card--feature">
-          <a
-            href="products.html"
-            class="lookbook-card__image-link"
-          >
+          <a href="products.html" class="lookbook-card__image-link">
             <img
               src="./images/slippers.png"
               alt="White embroidered slippers with a refined gold monogram"
@@ -523,10 +519,7 @@
         </article>
 
         <article class="lookbook-card lookbook-card--bottom-center">
-          <a
-            href="products.html"
-            class="lookbook-card__image-link"
-          >
+          <a href="products.html" class="lookbook-card__image-link">
             <img
               src="./images/totebag.png"
               alt="Embroidered robe and matching tote bag with coordinated details"
@@ -661,10 +654,7 @@
                 Personal keepsakes
               </span>
 
-              <a
-                href="custom-design.html"
-                class="audience-card__link"
-              >
+              <a href="custom-design.html" class="audience-card__link">
                 Start Your Design
                 <i data-lucide="arrow-up-right"></i>
               </a>
@@ -714,10 +704,7 @@
                 Shared moments
               </span>
 
-              <a
-                href="products.html"
-                class="audience-card__link"
-              >
+              <a href="products.html" class="audience-card__link">
                 Explore Ideas
                 <i data-lucide="arrow-up-right"></i>
               </a>
@@ -767,10 +754,7 @@
                 Brand visibility
               </span>
 
-              <a
-                href="bulk-orders.html"
-                class="audience-card__link"
-              >
+              <a href="bulk-orders.html" class="audience-card__link">
                 Tell Us More
                 <i data-lucide="arrow-up-right"></i>
               </a>
@@ -932,10 +916,7 @@
             <i data-lucide="arrow-right"></i>
           </a>
 
-          <a
-            href="contact.html"
-            class="btn-secondary custom-cta__secondary"
-          >
+          <a href="contact.html" class="btn-secondary custom-cta__secondary">
             <span>Contact Us</span>
             <i data-lucide="arrow-up-right"></i>
           </a>
@@ -1086,7 +1067,7 @@
           <ul class="contact">
             <li>
               <span class="contact-icon">
-                <i data-lucide="map-pin"></i>
+                <i data-lucide="map-pin" aria-hidden="true"></i>
               </span>
 
               <span>Hyderabad, Telangana</span>
@@ -1094,7 +1075,7 @@
 
             <li>
               <span class="contact-icon">
-                <i data-lucide="phone"></i>
+                <i data-lucide="phone" aria-hidden="true"></i>
               </span>
 
               <span>+91 98765 43210</span>
@@ -1102,17 +1083,46 @@
 
             <li>
               <span class="contact-icon">
-                <i data-lucide="mail"></i>
+                <i data-lucide="mail" aria-hidden="true"></i>
               </span>
 
               <span>hello@threadmark.com</span>
             </li>
           </ul>
 
-          <a href="contact.html" class="btn-primary footer-quote">
+          <form class="footer-email-form" id="footerEmailForm" novalidate>
+            <div class="footer-email-form__field">
+              <input
+                type="email"
+                id="footerEmail"
+                name="footerEmail"
+                value=""
+                placeholder="Enter your email"
+                autocomplete="email"
+                aria-label="Enter your email"
+              />
+            </div>
+          </form>
+
+          <button
+            type="button"
+            class="btn-primary footer-quote"
+            id="requestQuoteButton"
+          >
             <span>Request a Quote</span>
-            <i data-lucide="arrow-up-right"></i>
-          </a>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </button>
+
+          <p
+            class="footer-quote-message"
+            id="footerQuoteMessage"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <i data-lucide="circle-check-big" aria-hidden="true"></i>
+            <span>Message sent! We’ll contact you soon.</span>
+          </p>
         </div>
       </div>
 

@@ -71,7 +71,7 @@
   max-width: 670px;
   margin: 17px auto 0;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.75;
 }
 
@@ -473,7 +473,7 @@
 
 .threadmark-bulk-hero__details small {
   color: var(--muted);
-  font-size: 0.5rem;
+  font-size: 0.7rem;
 }
 
 .threadmark-bulk-hero__details strong {
@@ -591,7 +591,7 @@
 .threadmark-bulk-solutions__card > p {
   margin: 10px 0 18px;
   color: var(--muted);
-  font-size: 0.69rem;
+  font-size: 0.9rem;
   line-height: 1.65;
 }
 
@@ -601,7 +601,7 @@
   gap: 6px;
   margin-top: auto;
   color: var(--text);
-  font-size: 0.59rem;
+  font-size: 0.69rem;
   font-weight: 600;
 }
 
@@ -685,7 +685,7 @@
 .threadmark-bulk-process__card > p {
   margin: 11px 0 0;
   color: var(--muted);
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   line-height: 1.7;
 }
 
@@ -730,7 +730,7 @@
   align-items: center;
   gap: 7px;
   color: var(--muted);
-  font-size: 0.62rem;
+  font-size: 0.82rem;
   font-weight: 600;
 }
 
@@ -799,7 +799,7 @@
   border-radius: var(--radius-round);
   background: var(--secondary);
   color: var(--white);
-  font-size: 0.62rem;
+  font-size: 0.82rem;
   font-weight: 700;
 }
 
@@ -814,7 +814,7 @@
 .threadmark-bulk-form__panel-head p {
   margin: 3px 0 0;
   color: var(--muted);
-  font-size: 0.59rem;
+  font-size: 0.82rem;
   line-height: 1.5;
 }
 
@@ -837,7 +837,7 @@
   display: block;
   margin-bottom: 7px;
   color: var(--text);
-  font-size: 0.61rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -964,13 +964,13 @@
 
 .threadmark-bulk-form__type strong {
   color: var(--text);
-  font-size: 0.57rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__type small {
   margin-top: 2px;
   color: var(--muted);
-  font-size: 0.48rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__type:has(input:checked) {
@@ -1061,13 +1061,13 @@
 
 .threadmark-bulk-form__upload strong {
   color: var(--text);
-  font-size: 0.62rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__upload small {
   margin-top: 4px;
   color: var(--muted);
-  font-size: 0.52rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__upload em {
@@ -1075,7 +1075,7 @@
   border-radius: var(--radius-pill);
   background: var(--secondary);
   color: var(--white);
-  font-size: 0.53rem;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 700;
 }
@@ -1118,14 +1118,14 @@
 .threadmark-bulk-form__uploaded strong {
   overflow: hidden;
   color: var(--text);
-  font-size: 0.57rem;
+  font-size: 0.8rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .threadmark-bulk-form__uploaded small {
   color: var(--muted);
-  font-size: 0.49rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__uploaded button {
@@ -1148,7 +1148,7 @@
 .threadmark-bulk-form__counter {
   margin-top: 6px;
   color: var(--muted);
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   text-align: right;
 }
 
@@ -1195,7 +1195,7 @@
 
 .threadmark-bulk-form__support-top small {
   color: var(--secondary);
-  font-size: 0.49rem;
+  font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1212,7 +1212,7 @@
 .threadmark-bulk-form__support-intro {
   margin: 16px 0 0;
   color: rgba(255, 255, 255, 0.65);
-  font-size: 0.56rem;
+  font-size: 0.8rem;
   line-height: 1.65;
 }
 
@@ -1237,7 +1237,7 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-round);
   color: var(--secondary);
-  font-size: 0.48rem;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 
@@ -1249,13 +1249,13 @@
 
 .threadmark-bulk-form__support-list strong {
   color: var(--white);
-  font-size: 0.56rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__support-list small {
   margin-top: 3px;
   color: rgba(255, 255, 255, 0.55);
-  font-size: 0.49rem;
+  font-size: 0.8rem;
   line-height: 1.45;
 }
 
@@ -1280,7 +1280,7 @@
 .threadmark-bulk-form__artwork-head small,
 .threadmark-bulk-form__summary-head small {
   color: var(--secondary);
-  font-size: 0.47rem;
+  font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -1329,13 +1329,13 @@
 
 .threadmark-bulk-form__info-grid strong {
   color: var(--text);
-  font-size: 0.52rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__info-grid small {
   margin-top: 2px;
   color: var(--muted);
-  font-size: 0.44rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__artwork ul {
@@ -1351,7 +1351,7 @@
   align-items: center;
   gap: 8px;
   color: var(--muted);
-  font-size: 0.52rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__artwork li svg {
@@ -1380,14 +1380,14 @@
 
 .threadmark-bulk-form__summary-list span {
   color: var(--muted);
-  font-size: 0.52rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__summary-list strong {
   max-width: 60%;
   overflow: hidden;
   color: var(--text);
-  font-size: 0.54rem;
+  font-size: 0.8rem;
   text-align: right;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1418,13 +1418,13 @@
 
 .threadmark-bulk-form__summary-note strong {
   color: var(--text);
-  font-size: 0.52rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-form__summary-note span {
   margin-top: 3px;
   color: var(--muted);
-  font-size: 0.46rem;
+  font-size: 0.8rem;
   line-height: 1.45;
 }
 
@@ -1448,7 +1448,7 @@
   max-width: 720px;
   margin: 0;
   color: var(--muted);
-  font-size: 0.55rem;
+  font-size: 0.8rem;
   line-height: 1.55;
 }
 
@@ -1556,7 +1556,7 @@
   max-width: 630px;
   margin: 19px 0 0;
   color: rgba(255, 255, 255, 0.68);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   line-height: 1.8;
 }
 
@@ -1577,7 +1577,7 @@
   min-height: 46px;
   padding: 0 19px;
   border-radius: var(--radius-md);
-  font-size: 0.61rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-decoration: none;
   transition: var(--transition);
@@ -1649,7 +1649,7 @@
 
 .threadmark-bulk-cta__board-head small {
   color: var(--secondary);
-  font-size: 0.47rem;
+  font-size: 0.67rem;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
@@ -1667,7 +1667,7 @@
   border: 1px solid rgba(165, 117, 56, 0.35);
   border-radius: var(--radius-pill);
   color: var(--secondary);
-  font-size: 0.47rem;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 700;
 }
@@ -1690,7 +1690,7 @@
   border-radius: var(--radius-round);
   background: rgba(165, 117, 56, 0.12);
   color: var(--secondary);
-  font-size: 0.48rem;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 
@@ -1701,13 +1701,13 @@
 
 .threadmark-bulk-cta__board-row small {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 0.47rem;
+  font-size: 0.8rem;
 }
 
 .threadmark-bulk-cta__board-row strong {
   margin-top: 2px;
   color: var(--white);
-  font-size: 0.57rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -1738,7 +1738,7 @@
 
 .threadmark-bulk-cta__board-foot small {
   color: var(--secondary);
-  font-size: 0.45rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
 }
@@ -1746,7 +1746,7 @@
 .threadmark-bulk-cta__board-foot strong {
   margin-top: 2px;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 0.51rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 body.dark-mode .threadmark-bulk-page {

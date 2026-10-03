@@ -19,7 +19,9 @@
 
     <meta name="theme-color" content="#00365c" />
 
-    <title>ThreadMark | Custom Embroidery &amp; Monogramming | custom-design</title>
+    <title>
+      ThreadMark | Custom Embroidery &amp; Monogramming | custom-design
+    </title>
 
     <link rel="icon" type="image/png" href="./images/logo.png" />
 
@@ -222,95 +224,32 @@
         <div class="threadmark-custom-design-hero__visual">
           <div class="threadmark-custom-design-hero__visual-accent"></div>
 
-          <div
-            class="threadmark-custom-design-hero__preview"
-            aria-label="Custom embroidery preview"
-          >
-            <div class="threadmark-custom-design-hero__preview-top">
-              <div class="threadmark-custom-design-hero__preview-heading">
-                <span class="threadmark-custom-design-hero__preview-kicker">
-                  ThreadMark Studio
-                </span>
+          <div class="threadmark-custom-design-hero__image-card">
+            <img
+              src="./images/design.png"
+              alt="Detailed personalized embroidery work on fabric"
+              class="threadmark-custom-design-hero__image"
+            />
 
-                <span class="threadmark-custom-design-hero__preview-label">
-                  Design Preview
-                </span>
-              </div>
+            <div class="threadmark-custom-design-hero__image-shade"></div>
 
-              <span class="threadmark-custom-design-hero__preview-status">
-                <i data-lucide="check-circle-2" aria-hidden="true"></i>
-                Ready to personalize
+            <div class="threadmark-custom-design-hero__image-badge">
+              <span class="threadmark-custom-design-hero__image-badge-icon">
+                <i data-lucide="sparkles" aria-hidden="true"></i>
               </span>
+
+              <div>
+                <span>Made for you</span>
+                <strong>Every stitch is personal</strong>
+              </div>
             </div>
 
-            <div class="threadmark-custom-design-hero__fabric">
-              <span class="threadmark-custom-design-hero__fabric-label">
-                Live Preview
-              </span>
-
+            <div class="threadmark-custom-design-hero__image-caption">
+              <span>01</span>
               <span
-                class="threadmark-custom-design-hero__stitch threadmark-custom-design-hero__stitch--one"
+                class="threadmark-custom-design-hero__image-caption-line"
               ></span>
-
-              <span
-                class="threadmark-custom-design-hero__stitch threadmark-custom-design-hero__stitch--two"
-              ></span>
-
-              <span
-                class="threadmark-custom-design-hero__stitch threadmark-custom-design-hero__stitch--three"
-              ></span>
-
-              <div class="threadmark-custom-design-hero__monogram">
-                <span class="threadmark-custom-design-hero__monogram-ornament">
-                  <i data-lucide="sparkles" aria-hidden="true"></i>
-                </span>
-
-                <span class="threadmark-custom-design-hero__monogram-small">
-                  YOUR INITIALS
-                </span>
-
-                <div class="threadmark-custom-design-hero__initials">
-                  <span class="threadmark-custom-design-hero__initial">V</span>
-                  <span class="threadmark-custom-design-hero__initial">G</span>
-                </div>
-
-                <span
-                  class="threadmark-custom-design-hero__monogram-line"
-                ></span>
-
-                <span class="threadmark-custom-design-hero__monogram-caption">
-                  Custom Monogram
-                </span>
-              </div>
-
-              <span class="threadmark-custom-design-hero__placement">
-                <i data-lucide="move" aria-hidden="true"></i>
-                Center placement
-              </span>
-            </div>
-
-            <div class="threadmark-custom-design-hero__preview-bottom">
-              <div class="threadmark-custom-design-hero__setting">
-                <span class="threadmark-custom-design-hero__setting-icon">
-                  <i data-lucide="palette" aria-hidden="true"></i>
-                </span>
-
-                <span>
-                  <small>Thread color</small>
-                  Navy blue
-                </span>
-              </div>
-
-              <div class="threadmark-custom-design-hero__setting">
-                <span class="threadmark-custom-design-hero__setting-icon">
-                  <i data-lucide="type" aria-hidden="true"></i>
-                </span>
-
-                <span>
-                  <small>Style</small>
-                  Classic monogram
-                </span>
-              </div>
+              <span>Designed with care</span>
             </div>
           </div>
         </div>
@@ -2388,7 +2327,7 @@
           <ul class="contact">
             <li>
               <span class="contact-icon">
-                <i data-lucide="map-pin"></i>
+                <i data-lucide="map-pin" aria-hidden="true"></i>
               </span>
 
               <span>Hyderabad, Telangana</span>
@@ -2396,7 +2335,7 @@
 
             <li>
               <span class="contact-icon">
-                <i data-lucide="phone"></i>
+                <i data-lucide="phone" aria-hidden="true"></i>
               </span>
 
               <span>+91 98765 43210</span>
@@ -2404,17 +2343,46 @@
 
             <li>
               <span class="contact-icon">
-                <i data-lucide="mail"></i>
+                <i data-lucide="mail" aria-hidden="true"></i>
               </span>
 
               <span>hello@threadmark.com</span>
             </li>
           </ul>
 
-          <a href="contact.html" class="btn-primary footer-quote">
+          <form class="footer-email-form" id="footerEmailForm" novalidate>
+            <div class="footer-email-form__field">
+              <input
+                type="email"
+                id="footerEmail"
+                name="footerEmail"
+                value=""
+                placeholder="Enter your email"
+                autocomplete="email"
+                aria-label="Enter your email"
+              />
+            </div>
+          </form>
+
+          <button
+            type="button"
+            class="btn-primary footer-quote"
+            id="requestQuoteButton"
+          >
             <span>Request a Quote</span>
-            <i data-lucide="arrow-up-right"></i>
-          </a>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </button>
+
+          <p
+            class="footer-quote-message"
+            id="footerQuoteMessage"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <i data-lucide="circle-check-big" aria-hidden="true"></i>
+            <span>Message sent! We’ll contact you soon.</span>
+          </p>
         </div>
       </div>
 

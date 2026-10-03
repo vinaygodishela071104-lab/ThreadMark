@@ -19,7 +19,7 @@
 
     <meta name="theme-color" content="#00365c" />
 
-    <title>ThreadMark | Custom Embroidery &amp; Monogramming | Products </title>
+    <title>ThreadMark | Custom Embroidery &amp; Monogramming | Products</title>
 
     <link rel="icon" type="image/png" href="./images/logo.png" />
 
@@ -1907,7 +1907,7 @@
           <ul class="contact">
             <li>
               <span class="contact-icon">
-                <i data-lucide="map-pin"></i>
+                <i data-lucide="map-pin" aria-hidden="true"></i>
               </span>
 
               <span>Hyderabad, Telangana</span>
@@ -1915,7 +1915,7 @@
 
             <li>
               <span class="contact-icon">
-                <i data-lucide="phone"></i>
+                <i data-lucide="phone" aria-hidden="true"></i>
               </span>
 
               <span>+91 98765 43210</span>
@@ -1923,17 +1923,46 @@
 
             <li>
               <span class="contact-icon">
-                <i data-lucide="mail"></i>
+                <i data-lucide="mail" aria-hidden="true"></i>
               </span>
 
               <span>hello@threadmark.com</span>
             </li>
           </ul>
 
-          <a href="contact.html" class="btn-primary footer-quote">
+          <form class="footer-email-form" id="footerEmailForm" novalidate>
+            <div class="footer-email-form__field">
+              <input
+                type="email"
+                id="footerEmail"
+                name="footerEmail"
+                value=""
+                placeholder="Enter your email"
+                autocomplete="email"
+                aria-label="Enter your email"
+              />
+            </div>
+          </form>
+
+          <button
+            type="button"
+            class="btn-primary footer-quote"
+            id="requestQuoteButton"
+          >
             <span>Request a Quote</span>
-            <i data-lucide="arrow-up-right"></i>
-          </a>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </button>
+
+          <p
+            class="footer-quote-message"
+            id="footerQuoteMessage"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <i data-lucide="circle-check-big" aria-hidden="true"></i>
+            <span>Message sent! We’ll contact you soon.</span>
+          </p>
         </div>
       </div>
 
